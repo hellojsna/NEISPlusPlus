@@ -1814,3 +1814,7 @@ button.p-sidebar-close {
 .main-stu .area__right .main-list .main-stu__menu li p {
   color: #fff !important;
 }
+
+.calendar-wrap .fc .fc-daygrid-day-number, .main-stu .area__right .main-stu__next .main-list__wrap .list-form__tit p {
+    color: #fff;
+}
