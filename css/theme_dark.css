@@ -1816,5 +1816,11 @@ button.p-sidebar-close {
 }
 
 .calendar-wrap .fc .fc-daygrid-day-number, .main-stu .area__right .main-stu__next .main-list__wrap .list-form__tit p {
-    color: #fff;
+    color: #fff !important;
+}
+.p-dialog > div {
+  background-color: #1C1C1D !important;
+}
+.p-dialog > div * {
+    color: #fff !important;
 }

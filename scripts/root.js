@@ -1,7 +1,7 @@
 function obfuscateID(id, envUUID) {
     // obfuscate the id using envUUID
     if (id.length > envUUID.length) {
-        throw new Error('ID is too long to obfuscate');
+        throw new Error('ID is too long to obfuscate.');
     }
     const idLength = id.length;
     const step = Math.floor(envUUID.length / id.length);
@@ -13,8 +13,8 @@ function obfuscateID(id, envUUID) {
     return obfuscatedID;
 }
 
+const logoElem = document.getElementsByClassName("hd-logo");
 function overrideDarkModeLogo(darkMode) {
-    const logoElem = document.getElementsByClassName("hd-logo");
     if (logoElem.length == 0) {
         return
     }
@@ -23,23 +23,47 @@ function overrideDarkModeLogo(darkMode) {
         image.src = darkMode ? "./assets/neisplus/images/theme/dark/logo.svg" : "./assets/neisplus/images/logo.svg";
     }
 }
-function checkDarkMode() {
-    chrome.storage.sync.get(['envUUID', 'darkMode'], function (result) {
-        if (result.darkMode) {
-            injectCSS('css/theme_dark.css', result.envUUID);
-        } else {
-            document.getElementById(obfuscateID('NPP_CSS_theme_dark', result.envUUID))?.remove();
+function addLogoUpdateObserver() {
+    let lastURL = location.href;
+    new MutationObserver(() => {
+        const currentURL = location.href;
+        if (currentURL !== lastURL) {
+            lastURL = currentURL;
+            console.log('URL changed to: ' + currentURL);
+            checkDarkMode();
         }
-        overrideDarkModeLogo(result.darkMode);
-    });
+    }).observe(document, { attributes: true, childList: true, subtree: true });
 }
+
 function injectCSS(file, envUUID) {
+    // This function should NOT be called directly, use checkDarkMode().
+    if (!envUUID) {
+        throw new Error('envUUID is required to inject CSS.');
+    }
+    const linkID = obfuscateID('NPP_CSS_theme_dark', envUUID);
+    if (document.getElementById(linkID)) {
+        return; // CSS already injected
+    }
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
     link.href = chrome.runtime.getURL(file);
     link.id = obfuscateID('NPP_CSS_theme_dark', envUUID);
     document.head.appendChild(link);
+}
+
+function checkDarkMode() {
+    chrome.storage.sync.get(['envUUID', 'darkMode'], function (result) {
+        if (result.darkMode) {
+            injectCSS('css/theme_dark.css', result.envUUID);
+        } else {
+            const linkID = obfuscateID('NPP_CSS_theme_dark', result.envUUID);
+            if (document.getElementById(linkID)) {
+                document.getElementById(linkID)?.remove();
+            }
+        }
+        overrideDarkModeLogo(result.darkMode);
+    });
 }
 
 chrome.storage.onChanged.addListener(function (changes, namespace) {
@@ -49,3 +73,5 @@ chrome.storage.onChanged.addListener(function (changes, namespace) {
 });
 
 checkDarkMode();
+setTimeout(checkDarkMode, 2000); // Retry after 2 seconds to make sure dark mode is applied even if the page loads slowly.
+addLogoUpdateObserver();
