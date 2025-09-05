@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "NEIS++",
+    "description": "4세대 NEIS - 학생용 NEIS+ 서비스 사용 환경 개선",
+    "version": "1.0",
+    "action": {
+        "default_popup": "html/HelloNEIS++.html",
+        "default_icon": "images/PlusPlusIcon.png"
+    },
+    "permissions": ["storage"],
+    "options_page":  "html/options.html",
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/root.js"
+            ],
+            "css": [
+                "css/root.css"
+            ],
+            "matches": [
+                "https://*.neisplus.kr/*"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "*.png",
+                "*.svg",
+                "*.css"
+            ],
+            "matches": [
+                "https://*.neisplus.kr/*"
+            ]
+        }
+    ]
+}
