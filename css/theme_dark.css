@@ -24,11 +24,16 @@ header .hd-logo span,
 .calendar-wrap .fc .fc-toolbar-title,
 .calendar-wrap .fc .fc-daygrid-day-number,
 .main-stu .area__right .main-stu__next .main-list__wrap .list-form__tit p,
-.p-dialog>div * {
+.p-dialog>div *,
+table.p-datatable-table.ng-star-inserted > tbody > tr td div {
   color: #fff !important;
 }
 
-.com-box {
+.com-box,
+header .hd-util .alert-pop,
+header .hd-util .quick-pop,
+header .gnb-wrap .gnb-cont,
+.main-stu .area__right .main-stu__pagination {
   background-color: #1C1C1D80 !important;
 }
 
@@ -210,11 +215,9 @@ table th,
 ul.tbl-view>li>div,
 ul.tbl-view>li .view-col div.td,
 header .area__left .tchInfo, header .area__left .tchInfo *,
-header .hd-util .alert-pop,
 header .gnb-wrap .gnb-tit,
 header .gnb-wrap .gnb-info,
 header .gnb-wrap .gnb,
-header .gnb-wrap .gnb-cont,
 .tree-wrap .tree-left,
 .tree-wrap .tree-menu__box,
 .toggle-scope .page-detail .active-wrap,
@@ -376,10 +379,6 @@ header .area__right *,
 .content-info__r * {
   color: #ddd !important;
   border-color: #39393D !important;
-}
-
-header .hd-util .quick-pop {
-  background-color: #1C1C1D80 !important;
 }
 
 header .gnb-wrap {
@@ -817,6 +816,7 @@ select {
   display: none;
 }
 
+.main-stu .area__right .main-list .main-stu__notice .tbl-list table,
 .b-blue-dark-line {
   background: none !important;
 }
@@ -1090,7 +1090,7 @@ button.p-sidebar-close {
   background-repeat: no-repeat;
   background-size: 100%;
   filter: saturate(10) brightness(0.5);
-  opacity: 0.3;
+  opacity: 0.1;
 }
 
 .main-stu .area__right .main-stu__slide>ul>.swiper-slide.main-stu__prev::before {
@@ -1099,4 +1099,9 @@ button.p-sidebar-close {
 
 .main-stu .area__right .main-stu__slide>ul>.swiper-slide.main-stu__next::before {
   background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/images/main-stu_next.png);
+}
+
+.main-stu .area__right .main-stu__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #f8f9fa50 !important;
+    color: #000 !important;
 }

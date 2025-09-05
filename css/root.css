@@ -1,3 +1,9 @@
+:root {
+    --thinBlur: blur(5px) saturate(1.8);
+    --normalBlur: blur(10px) saturate(1.8);
+    --thickBlur: blur(20px) saturate(1.8);
+}
+
 body {
     transition: background-color 0.3s ease-in-out;
 }
@@ -13,25 +19,29 @@ header .gnb-wrap.show {
 
 .main-stu .area__right .main-list .main-stu__info {
     background-color: #6359B180 !important;
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--thinBlur);
 }
 
 .main-stu .area__right .main-stu__pagination {
     background-color: #ffffff50 !important;
-    backdrop-filter: blur(5px);
+    backdrop-filter: var(--thinBlur);
+}
+
+.main-stu .area__right .main-stu__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #1C1C1D80 !important;
+    backdrop-filter: var(--thickBlur);
+    color: #000 !important;
 }
 
 li.swiper-slide.main-stu__next.swiper-slide-active div.school-info>div.list-form {
-    background: linear-gradient(to bottom, #1060E180, #568EE880 80%) !important;
-    backdrop-filter: blur(10px);
+    background: linear-gradient(to bottom, #1060E150, #568EE8 80%) !important;
+    backdrop-filter: var(--normalBlur);
 }
 
-.com-box {
-    background-color: #ffffff50 !important;
-    backdrop-filter: blur(5px);
-}
-
-header .hd-util .quick-pop {
+.com-box,
+header .hd-util .alert-pop,
+header .hd-util .quick-pop,
+header .gnb-wrap .gnb-cont {
     background-color: #ffffff80 !important;
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--thickBlur);
 }
