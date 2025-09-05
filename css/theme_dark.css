@@ -1,6 +1,7 @@
 /* From https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/dark.css */
 
 @charset "UTF-8";
+
 /*---- 정렬 ----*/
 /*---- FONT-STYLE ----*/
 /*---- BOX-STYLE ----*/
@@ -28,6 +29,7 @@ header {
   border-color: #39393D !important;
   color: #ddd !important;
 }
+
 body .hd-logo span,
 header .hd-logo span {
   color: #fff !important;
@@ -38,6 +40,7 @@ footer {
   border-color: #39393D !important;
   color: #ddd !important;
 }
+
 footer * {
   background-color: #000 !important;
   border-color: #39393D !important;
@@ -45,15 +48,18 @@ footer * {
 }
 
 .com-box {
-  background-color: #1C1C1D !important;
+  background-color: #1C1C1D80 !important;
   color: #ddd !important;
 }
+
 .com-box h3 {
   color: #ddd !important;
 }
+
 .com-box span {
   color: #ddd !important;
 }
+
 .com-box .btn {
   color: #ddd !important;
 }
@@ -90,30 +96,38 @@ textarea {
 table {
   background-color: #1C1C1D !important;
 }
+
 table,
 table * {
   border-color: #39393D !important;
 }
+
 table th {
   background-color: #1C1C1D !important;
   color: #ddd !important;
 }
+
 table th * {
   color: #ddd !important;
 }
+
 table td {
   border-color: #39393D !important;
   color: #ddd !important;
 }
+
 table td .btn {
   color: #ddd !important;
 }
+
 table td .answer-mark {
   color: #ddd !important;
 }
+
 table td .tbl-tit-cut {
   color: #ddd !important;
 }
+
 table td .name-wrap * {
   color: #ddd !important;
 }
@@ -121,6 +135,7 @@ table td .name-wrap * {
 .tbl-tit {
   color: #ddd !important;
 }
+
 .tbl-des {
   color: #8F8F93 !important;
 }
@@ -129,43 +144,54 @@ ul.tbl-view {
   background-color: #39393D !important;
   border-color: #39393D !important;
 }
-ul.tbl-view > li {
+
+ul.tbl-view>li {
   border-color: #39393D !important;
 }
-ul.tbl-view > li > div {
+
+ul.tbl-view>li>div {
   background-color: #1C1C1D !important;
 }
-ul.tbl-view > li .view-col > div {
+
+ul.tbl-view>li .view-col>div {
   border-color: #39393D !important;
 }
-ul.tbl-view > li .view-col h5.th {
+
+ul.tbl-view>li .view-col h5.th {
   background-color: #1C1C1D !important;
   color: #ddd !important;
   border-right-color: #39393D !important;
 }
-ul.tbl-view > li .view-col div.td {
+
+ul.tbl-view>li .view-col div.td {
   color: #ddd !important;
   background-color: #1C1C1D !important;
 }
-ul.tbl-view > li .view-col div.td div {
+
+ul.tbl-view>li .view-col div.td div {
   color: #ddd !important;
 }
-ul.tbl-view > li .view-col div.td .setting-toggle .toggleSwitch .toggleButton {
+
+ul.tbl-view>li .view-col div.td .setting-toggle .toggleSwitch .toggleButton {
   color: #7D7D82 !important;
 }
-ul.tbl-view > li .view-col div.td b {
+
+ul.tbl-view>li .view-col div.td b {
   color: #ddd !important;
 }
-ul.tbl-view > li .view-col div.td span {
+
+ul.tbl-view>li .view-col div.td span {
   color: #ddd !important;
 }
-ul.tbl-view > li .view-col div.td label {
+
+ul.tbl-view>li .view-col div.td label {
   color: #ddd !important;
 }
 
 .pagination * {
   color: #ddd !important;
 }
+
 .pagination a.active {
   background-color: #39393D !important;
 }
@@ -182,60 +208,77 @@ header .gnb-wrap .gnb .gnb-ul .gnb-li.active .link {
 header .area__left * {
   color: #ddd !important;
 }
+
 header .area__left .tchInfo {
   background-color: #1C1C1D !important;
 }
+
 header .area__left .tchInfo * {
   background-color: #1C1C1D !important;
 }
+
 header .area__right * {
   color: #ddd !important;
   border-color: #39393D !important;
 }
+
 header .hd-quick li a {
   color: #ddd !important;
 }
+
 header .hd-quick li a.current {
   color: #1060E1 !important;
 }
+
 header li .btn {
   background-color: #39393D !important;
 }
+
 header .hd-util .quick-pop {
-  background-color: #1C1C1D !important;
+  background-color: #1C1C1D80 !important;
 }
+
 header .hd-util .alert-pop {
   background-color: #1C1C1D !important;
 }
+
 header .hd-util .alert-pop button {
   background-color: #39393D !important;
 }
+
 header .gnb-wrap {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
 header .gnb-wrap .gnb-tit,
 header .gnb-wrap .gnb-info,
 header .gnb-wrap .gnb,
 header .gnb-wrap .gnb-cont {
   background-color: #1C1C1D !important;
 }
+
 header .gnb-wrap .gnb-tit,
 header .gnb-wrap .gnb-info {
   border-color: #39393D !important;
 }
+
 header .gnb-wrap .gnb-info-tit * {
   color: #ddd !important;
 }
-header .gnb-wrap .gnb-info-cont > li > a {
+
+header .gnb-wrap .gnb-info-cont>li>a {
   color: #ddd !important;
 }
-header .gnb-wrap .gnb-info-cont > li > a > div {
+
+header .gnb-wrap .gnb-info-cont>li>a>div {
   background-color: #39393D !important;
 }
-header .gnb-wrap .gnb-scroll-wrap > li > a {
+
+header .gnb-wrap .gnb-scroll-wrap>li>a {
   color: #ddd !important;
 }
-header .gnb-wrap .gnb-scroll-wrap > li .gnb__lnb > li > a {
+
+header .gnb-wrap .gnb-scroll-wrap>li .gnb__lnb>li>a {
   color: #8F8F93 !important;
 }
 
@@ -243,21 +286,27 @@ header .gnb-wrap .gnb-scroll-wrap > li .gnb__lnb > li > a {
   background-color: #1C1C1D !important;
   color: #8F8F93 !important;
 }
+
 .snb-wrap .snb-door:before {
   background-color: #39393D !important;
 }
+
 .snb-wrap * {
   border-color: #39393D !important;
 }
+
 .snb-wrap .snb .tree-menu__box .tree-menu__tit {
   color: #ddd !important;
 }
+
 .snb-wrap .snb .tree-menu__box .tree-menu .depth-txt * {
   color: #ddd !important;
 }
+
 .snb-wrap .snb .tree-menu__box .tree-menu .depth-txt.depth1-txt.current {
   background-color: #39393D !important;
 }
+
 .snb-wrap .snb .tree-menu__box .tree-menu .depth-txt.current {
   background-color: #39393D !important;
 }
@@ -265,19 +314,24 @@ header .gnb-wrap .gnb-scroll-wrap > li .gnb__lnb > li > a {
 .tree-wrap .tree-left {
   background-color: #1C1C1D !important;
 }
+
 .tree-wrap .tree-menu__box {
   background-color: #1C1C1D !important;
   border-color: #39393D !important;
 }
-.tree-menu > li > a {
+
+.tree-menu>li>a {
   color: #ddd !important;
 }
-.tree-menu > li > ul > li > a {
+
+.tree-menu>li>ul>li>a {
   color: #8F8F93 !important;
 }
+
 .tree-menu .depth-txt.depth1-txt {
   color: #ddd !important;
 }
+
 .tree-menu .depth-txt {
   color: #8F8F93 !important;
 }
@@ -286,13 +340,16 @@ header .gnb-wrap .gnb-scroll-wrap > li .gnb__lnb > li > a {
   background-color: #39393D !important;
   border: none !important;
 }
+
 .chk-tree label {
   color: #ddd !important;
 }
+
 .chk-tree.active .chk-tree__box {
   background-color: #1060e1 !important;
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_chk_01.svg") !important;
 }
+
 .chk-tree.active label {
   color: #ddd !important;
 }
@@ -300,6 +357,7 @@ header .gnb-wrap .gnb-scroll-wrap > li .gnb__lnb > li > a {
 .sch-wrap {
   border: none;
 }
+
 .sch-wrap .sch-select .sch-select-col .sch-label {
   color: #ddd !important;
 }
@@ -311,9 +369,11 @@ header .gnb-wrap .gnb-scroll-wrap > li .gnb__lnb > li > a {
 .sub-tit-b {
   color: #ddd !important;
 }
+
 .sub-tit-s {
   color: #7D7D82 !important;
 }
+
 .sub-tit-c {
   color: #7D7D82 !important;
 }
@@ -321,10 +381,12 @@ header .gnb-wrap .gnb-scroll-wrap > li .gnb__lnb > li > a {
 .toggle-wrap {
   background-color: #39393D !important;
 }
+
 .toggle-wrap h4,
 .toggle-wrap p {
   color: #7D7D82 !important;
 }
+
 .toggle-wrap .btn-wrap {
   background-color: #28282a;
 }
@@ -332,21 +394,27 @@ header .gnb-wrap .gnb-scroll-wrap > li .gnb__lnb > li > a {
 .toggle-scope .page-simple ul li .active-wrap p {
   color: #ddd !important;
 }
+
 .toggle-scope .page-simple ul li .active-wrap .btn-wrap {
   background-color: #39393D !important;
 }
+
 .toggle-scope .page-detail h3:after {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_arr_scope.svg") !important;
 }
+
 .toggle-scope .page-detail h3 button span {
   color: #ddd !important;
 }
+
 .toggle-scope .page-detail .active-wrap {
   background-color: #1C1C1D !important;
 }
+
 .toggle-scope .page-detail .tree-check__tit {
   color: #8F8F93 !important;
 }
+
 .toggle-scope .page-detail .tree-menu__box {
   border-color: #39393D !important;
 }
@@ -355,21 +423,27 @@ header .gnb-wrap .gnb-scroll-wrap > li .gnb__lnb > li > a {
 .checkbox input {
   background-color: #39393D !important;
 }
-.checkbox input + label:before {
+
+.checkbox input+label:before {
   background-color: #39393D !important;
   border: none !important;
 }
-.checkbox input + label {
+
+.checkbox input+label {
   color: #ddd !important;
 }
-.checkbox input:checked + label:before {
+
+.checkbox input:checked+label:before {
   background-color: #1060e1 !important;
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_chk_01.svg") !important;
 }
 
-.b-red-line, .b-blue-line, .b-black-line {
+.b-red-line,
+.b-blue-line,
+.b-black-line {
   background-color: #1C1C1D !important;
 }
+
 .b-blue-line {
   color: #ddd !important;
 }
@@ -387,9 +461,11 @@ header .gnb-wrap .gnb-scroll-wrap > li .gnb__lnb > li > a {
 .timetable thead th {
   border-bottom: 1px solid #39393D !important;
 }
+
 .timetable button {
   color: #8F8F93 !important;
 }
+
 .timetable button.on {
   background-color: #39393D !important;
   color: #ddd !important;
@@ -398,16 +474,20 @@ header .gnb-wrap .gnb-scroll-wrap > li .gnb__lnb > li > a {
 .modal {
   background-color: black;
 }
+
 .modal-tit {
   background-color: #1C1C1D !important;
   border-color: #39393D !important;
 }
+
 .modal-tit h2 {
   color: #ddd !important;
 }
+
 .modal-wrap {
   background-color: #1C1C1D !important;
 }
+
 .modal-cont-wrap .modal-cont {
   color: #ddd !important;
 }
@@ -415,10 +495,12 @@ header .gnb-wrap .gnb-scroll-wrap > li .gnb__lnb > li > a {
 ul.input-wrap li h4 {
   color: #8F8F93 !important;
 }
+
 ul.input-wrap .checkbox label {
   color: #8F8F93 !important;
 }
-ul.input-wrap .checkbox label + input + span {
+
+ul.input-wrap .checkbox label+input+span {
   color: #8F8F93 !important;
 }
 
@@ -434,9 +516,11 @@ ul.input-wrap .checkbox label + input + span {
 .tab-menu {
   border-color: #39393D !important;
 }
+
 .tab-menu li.on .tab-tit {
   color: #ddd !important;
 }
+
 .tab-menu li.on .tab-tit::after {
   background-color: #ddd;
 }
@@ -444,30 +528,37 @@ ul.input-wrap .checkbox label + input + span {
 .drag-set-wrap h2 {
   color: #ddd !important;
 }
+
 .drag-set-wrap .drag-zone {
   background-color: #1C1C1D !important;
   border-color: #39393D !important;
 }
+
 .drag-set-wrap .drag-zone div .drag-zone-pick button {
   background-color: #39393D !important;
   color: #ddd !important;
   border: none !important;
 }
+
 .drag-set-wrap .drag-zone div .pick-none {
   background-color: #39393D !important;
 }
+
 .drag-set-wrap .drag-set-list h2 {
   border-color: #39393D !important;
 }
+
 .drag-set-wrap .drag-set-list button {
   background-color: #39393D !important;
   color: #ddd !important;
   border: none !important;
 }
-.drag-set-wrap .drag-set-list > li button.on {
+
+.drag-set-wrap .drag-set-list>li button.on {
   background-color: #7098d6 !important;
   color: #fff !important;
 }
+
 .drag-set-wrap .tree-wrap * {
   border-color: #39393D !important;
 }
@@ -475,13 +566,16 @@ ul.input-wrap .checkbox label + input + span {
 .card-detail-btn {
   color: #8F8F93;
 }
+
 .card-detail-cont {
   background-color: #1C1C1D !important;
   box-shadow: 1px 1px 10px 0px rgba(158, 158, 158, 0.4) !important;
 }
+
 .card-detail-cont-list h5 {
   color: #8F8F93 !important;
 }
+
 .card-detail-cont-list p,
 .card-detail-cont-list b {
   color: #ddd !important;
@@ -491,13 +585,15 @@ ul.input-wrap .checkbox label + input + span {
   border-color: #39393D !important;
 }
 
-.validity > span {
+.validity>span {
   color: #ddd !important;
 }
-.validity > i {
+
+.validity>i {
   border: 1px solid #bababa !important;
 }
-.validity.success > i {
+
+.validity.success>i {
   border: none !important;
 }
 
@@ -505,6 +601,7 @@ ul.input-wrap .checkbox label + input + span {
   background-color: #1C1C1D !important;
   border: 0;
 }
+
 .fms_subTitle p {
   color: #ddd !important;
 }
@@ -512,14 +609,17 @@ ul.input-wrap .checkbox label + input + span {
 .fms_inner h3 {
   color: #ddd !important;
 }
+
 .fms_inner article {
   background-color: #1C1C1D !important;
   color: #ddd !important;
   border: 0;
 }
+
 .fms_inner article p {
   color: #ddd !important;
 }
+
 .fms_inner article .fms_inner-con h4 {
   color: #ddd !important;
 }
@@ -527,6 +627,7 @@ ul.input-wrap .checkbox label + input + span {
 .contents-bot-txt {
   color: #8F8F93 !important;
 }
+
 .contents-bot-txt.addLine::after {
   background-color: #39393D !important;
 }
@@ -554,26 +655,31 @@ ul.input-wrap .checkbox label + input + span {
   color: #ddd !important;
   border-color: #39393D !important;
 }
+
 .viewDetail .view-info * {
   background-color: #1C1C1D !important;
   color: #ddd !important;
   border-color: #39393D !important;
 }
+
 .viewDetail .view-con * {
   background-color: #1C1C1D !important;
   color: #ddd !important;
   border-color: #39393D !important;
 }
+
 .viewDetail .view-nav * {
   background-color: #1C1C1D !important;
   color: #ddd !important;
   border-color: #39393D !important;
 }
+
 .viewDetail .view_attach {
   background-color: #1C1C1D !important;
   color: #ddd !important;
   border-color: #39393D !important;
 }
+
 .viewDetail .view_attach * {
   background-color: #1C1C1D !important;
   color: #ddd !important;
@@ -585,6 +691,7 @@ ul.input-wrap .checkbox label + input + span {
   color: #ddd !important;
   border-color: #39393D !important;
 }
+
 .viewComment_ *::before {
   background-color: #39393D !important;
 }
@@ -595,7 +702,8 @@ ul.input-wrap .checkbox label + input + span {
   border-color: #39393D !important;
 }
 
-.multi-file-upload .uploadTit button, .multi-file-upload .uploadBtn {
+.multi-file-upload .uploadTit button,
+.multi-file-upload .uploadBtn {
   border: 1px solid #000;
 }
 
@@ -605,227 +713,300 @@ ul.input-wrap .checkbox label + input + span {
   /*-- header --*/
   /*-- tree --*/
 }
+
 .ico-gnb-close {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_gnb_close.svg") !important;
 }
+
 .ico-hd-cal {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_gnb_cal.svg") !important;
 }
+
 .ico-hd-report {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_gnb_report.svg") !important;
 }
+
 .ico-hd-info {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_gnb_info.svg") !important;
 }
+
 .ico-gnb-setting {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_gnb_setting.svg") !important;
 }
+
 .ico-gnb-time {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_gnb_time.svg") !important;
 }
+
 .ico-gnb-survey {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_gnb_survey.svg") !important;
 }
+
 .ico-gnb-hope {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_gnb_hope.svg") !important;
 }
+
 .ico-admin {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_hd_admin.svg") !important;
 }
+
 .ico-noti {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-noti_w.svg") !important;
 }
+
 .ico-help {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-help_w.svg") !important;
 }
+
 .ico-quick {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-quick_w.svg") !important;
 }
+
 .ico-gnb {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-gnb_w.svg") !important;
 }
+
 .ico-sch {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_search.svg") !important;
 }
+
 .ico-prev {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_tbl_prev.svg") !important;
 }
+
 .ico-next {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_tbl_next.svg") !important;
 }
+
 .ico-plus {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_plus.svg") !important;
 }
+
 .ico-tree__end {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_tree_end.svg") !important;
 }
+
 .ico-tree__next {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_tree_next.svg") !important;
 }
+
 .ico-tree__prev {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_tree_prev.svg") !important;
 }
+
 .ico-tree__start {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_tree_start.svg") !important;
 }
+
 .ico-arr-w {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_arr_w.svg") !important;
 }
+
 .ico-modal-close {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_close_modal.svg") !important;
 }
+
 .ico-back {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_back.svg") !important;
 }
+
 .ico-more {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-more.svg") !important;
 }
+
 .ico-page-more {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-page-more.svg") !important;
 }
+
 .ico-setting {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-setting.svg") !important;
 }
+
 .ico-logout {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-logout.svg") !important;
 }
+
 .ico-home-e {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-home-w.svg") !important;
 }
+
 .ico-lnb-class {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-class-w.svg") !important;
 }
+
 .ico-lnb-neis {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-neis_w.svg") !important;
 }
+
 .ico-lnb-neis2 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-neis2-w.svg") !important;
 }
+
 .ico-lnb-neisSub {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-neisSub-w.svg") !important;
 }
+
 .ico-lnb-neisSub2 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-neisSub2-w.svg") !important;
 }
+
 .ico-lnb-function {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-function-w.svg") !important;
 }
+
 .ico-lnb-question {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-question-w.svg") !important;
 }
+
 .ico-lnb-student {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-student-w.svg") !important;
 }
+
 .ico-lnb-share {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-share-w.svg") !important;
 }
+
 .ico-lnb-homework {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-homework-w.svg") !important;
 }
+
 .ico-lnb-quespool {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-quespool-w.svg") !important;
 }
+
 .ico-lnb-contents {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-contents-w.svg") !important;
 }
+
 .ico-lnb-setting {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-setting-w.svg") !important;
 }
+
 .ico-lnb-service {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-service-w.svg") !important;
 }
+
 .ico-lnb-guide {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-guide-w.svg") !important;
 }
+
 .ico-lnb-standard {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-standard-w.svg") !important;
 }
+
 .ico-lnb-course {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-course-w.svg") !important;
 }
+
 .ico-lnb-entrust {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-entrust-w.svg") !important;
 }
+
 .ico-lnb-data {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-data-w.svg") !important;
 }
+
 .ico-lnb-etc {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-etc-w.svg") !important;
 }
+
 .ico-lnb-class01 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-class01-w.svg") !important;
 }
+
 .ico-lnb-class02 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-class02-w.svg") !important;
 }
+
 .ico-lnb-class03 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-class03-w.svg") !important;
 }
+
 .ico-lnb-task01 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-task01-w.svg") !important;
 }
+
 .ico-lnb-task02 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-task02-w.svg") !important;
 }
+
 .ico-lnb-task03 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-task03-w.svg") !important;
 }
+
 .ico-lnb-question01 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-question01-w.svg") !important;
 }
+
 .ico-lnb-question02 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-question02-w.svg") !important;
 }
+
 .ico-lnb-question03 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-question03-w.svg") !important;
 }
+
 .ico-lnb-contents01 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-contents01-w.svg") !important;
 }
+
 .ico-lnb-contents02 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-contents02-w.svg") !important;
 }
+
 .ico-lnb-contents03 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-contents03-w.svg") !important;
 }
+
 .ico-lnb-app {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-app-w.svg") !important;
 }
+
 .ico-lnb-app01 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-app01-w.svg") !important;
 }
+
 .ico-lnb-app02 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-app02-w.svg") !important;
 }
+
 .ico-lnb-app03 {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-app03-w.svg") !important;
 }
+
 .ico-comment-clx {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-comment-clx_w.svg") !important;
 }
+
 .ico-stu_school {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-stu_school.svg") !important;
 }
+
 .ico-stu_class {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-stu_class.svg") !important;
 }
+
 .ico-stu_write {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-stu_write.svg") !important;
 }
+
 .ico-stu_grade {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-stu_grade.svg") !important;
 }
+
 .ico-stu_health {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-stu_health.svg") !important;
 }
+
 .ico-stu_menu {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-stu_menu.svg") !important;
 }
+
 .ico-stu_survey {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-stu_survey.svg") !important;
 }
 
-header .hd-util > li .btn.active {
+header .hd-util>li .btn.active {
   background-color: #1060E1 !important;
 }
 
@@ -855,6 +1036,7 @@ select {
   background-color: #1C1C1D !important;
   border-color: #39393D !important;
 }
+
 .list-form .state {
   background-color: #1C1C1D !important;
   color: #ddd !important;
@@ -863,36 +1045,45 @@ select {
 .button-pop__ul {
   background-color: #39393D !important;
 }
+
 .button-pop__ul * {
   color: #ddd !important;
   border-color: #39393D !important;
 }
-.button-pop__ul .checkbox input + label:before {
+
+.button-pop__ul .checkbox input+label:before {
   background-color: #1C1C1D !important;
 }
 
 .display-con {
   color: #ddd !important;
 }
+
 .display-con * {
   color: #ddd !important;
 }
+
 .display-con .num {
   border-color: #39393D !important;
 }
+
 .display-con .basic {
   color: #7D7D82 !important;
 }
+
 .display-con .setting-toggle .toggleSwitch .toggleButton {
   color: #7D7D82 !important;
 }
-.display-con .checkbox input + label:before {
+
+.display-con .checkbox input+label:before {
   background-color: #39393D !important;
 }
+
 .display-con .display-con__txt {
   background-color: #1C1C1D !important;
   border-color: #39393D !important;
 }
+
 .display-con .type ul {
   background-color: #39393D !important;
   border-color: #39393D !important;
@@ -926,15 +1117,19 @@ select {
 .participant-txt-li.active {
   background-color: #39393D !important;
 }
-.participant-txt-li.active .checkbox input + label:before {
+
+.participant-txt-li.active .checkbox input+label:before {
   background-color: #1C1C1D !important;
 }
+
 .participant-txt-li .person .name {
   color: #8F8F93 !important;
 }
+
 .participant-txt-li .person .name-s {
   color: #7D7D82 !important;
 }
+
 .participant-txt-li .state {
   color: #ddd !important;
 }
@@ -946,10 +1141,12 @@ select {
 .group-create__stuList {
   background-color: #1C1C1D !important;
 }
+
 .group-create__stuList * {
   border-color: #39393D !important;
   color: #ddd !important;
 }
+
 .group-create__stuList .stuList {
   background-color: #1C1C1D !important;
 }
@@ -966,9 +1163,11 @@ select {
   border-color: #1C1C1D !important;
   background-color: #39393D !important;
 }
+
 .group-create .person * {
   color: #ddd !important;
 }
+
 .group-create .person.current {
   background-color: #1C1C1D !important;
 }
@@ -993,16 +1192,19 @@ select {
 .participant-infoWrap__cont {
   background-color: #39393D !important;
 }
-.participant-infoWrap__cont .checkbox input + label:before {
+
+.participant-infoWrap__cont .checkbox input+label:before {
   background-color: #1C1C1D !important;
 }
-.participant-infoWrap__cont .tbl-view-mypage .checkbox input + label:before {
+
+.participant-infoWrap__cont .tbl-view-mypage .checkbox input+label:before {
   background-color: #39393D !important;
 }
 
 .participant-info {
   border-color: #39393D !important;
 }
+
 .participant-info * {
   border-color: #39393D !important;
 }
@@ -1031,6 +1233,7 @@ select {
   background-color: #1C1C1D !important;
   border-color: #39393D !important;
 }
+
 .calendar-btn * {
   color: #ddd !important;
 }
@@ -1064,6 +1267,7 @@ select {
 .content-info__r {
   background-color: #39393D !important;
 }
+
 .content-info__r * {
   color: #ddd !important;
   border-color: #39393D !important;
@@ -1080,6 +1284,7 @@ select {
 .list-form__topWrap.topWrap2 {
   background-color: #1C1C1D !important;
 }
+
 .list-form__topWrap.topWrap2 * {
   color: #ddd !important;
 }
@@ -1089,17 +1294,18 @@ select {
   border-color: #39393D !important;
 }
 
-.fullCheck input[type=radio] + label {
+.fullCheck input[type=radio]+label {
   background-color: #1C1C1D !important;
 }
 
-.fullCheck.bg-skyblue input[type=radio]:checked + label {
+.fullCheck.bg-skyblue input[type=radio]:checked+label {
   background-color: #39393D !important;
 }
 
 .list-form.list-style-recommend {
   background-color: #1C1C1D !important;
 }
+
 .list-form.list-style-recommend .tit {
   color: #ddd !important;
 }
@@ -1194,7 +1400,7 @@ select {
   background-color: #1C1C1D !important;
 }
 
-.fullCheck.plusChk input[type=checkbox] + label {
+.fullCheck.plusChk input[type=checkbox]+label {
   background-color: #1C1C1D !important;
 }
 
@@ -1209,6 +1415,7 @@ select {
 .list-form.badge-rank {
   border-color: #39393D !important;
 }
+
 .list-form.badge-rank * {
   color: #ddd !important;
 }
@@ -1220,19 +1427,23 @@ select {
 .question-list .question-list__top {
   border-color: #39393D !important;
 }
+
 .question-list .question {
   border-color: #39393D !important;
 }
+
 .question-list .question-list__check {
   background-color: #39393D !important;
 }
-.question-list .question-list__check .checkbox input + label:before {
+
+.question-list .question-list__check .checkbox input+label:before {
   background-color: #1C1C1D !important;
 }
 
 .question-edit .question-edit__right {
   background-color: #1C1C1D !important;
 }
+
 .question-edit .question-edit__right * {
   color: #ddd !important;
 }
@@ -1245,19 +1456,23 @@ select {
 .question-top {
   background-color: #39393D !important;
 }
-.question-top .checkbox input + label:before {
+
+.question-top .checkbox input+label:before {
   background-color: #1C1C1D !important;
 }
 
 .question-con {
   background-color: #1C1C1D !important;
 }
+
 .question-con .question-con__explain {
   border-color: #39393D !important;
 }
+
 .question-con .question-con__explain-li {
   background-color: #39393D !important;
 }
+
 .question-con .question-con__question {
   color: #ddd !important;
 }
@@ -1290,6 +1505,7 @@ select {
 .state-wrap__count {
   color: #ddd !important;
 }
+
 .state-wrap__count b {
   color: #ddd !important;
 }
@@ -1301,6 +1517,7 @@ select {
 .level-table table th {
   background-color: #39393D !important;
 }
+
 .level-table table th .level {
   background-color: #1C1C1D !important;
 }
@@ -1309,11 +1526,11 @@ select {
   background-color: #1C1C1D !important;
 }
 
-.fullCheck input[type=checkbox] + label {
+.fullCheck input[type=checkbox]+label {
   background-color: #39393D !important;
 }
 
-.fullCheck input[type=checkbox]:checked + label {
+.fullCheck input[type=checkbox]:checked+label {
   background-color: #1060E1 !important;
 }
 
@@ -1328,10 +1545,12 @@ select {
 .question-type .question-type__select {
   background-color: #39393D !important;
 }
+
 .question-type .question-type__select .tit {
   color: #ddd !important;
 }
-.question-type .question-type__select .checkbox input + label:before {
+
+.question-type .question-type__select .checkbox input+label:before {
   background-color: #1C1C1D !important;
 }
 
@@ -1343,16 +1562,20 @@ select {
   background-color: #1C1C1D !important;
 }
 
-.upload-box__bot, .upload-area {
+.upload-box__bot,
+.upload-area {
   border-color: #39393D !important;
 }
-.upload-box__bot *, .upload-area * {
+
+.upload-box__bot *,
+.upload-area * {
   color: #ddd !important;
 }
 
 .upload-info {
   border-color: #39393D !important;
 }
+
 .upload-info .upload-txt * {
   color: #ddd !important;
 }
@@ -1396,6 +1619,7 @@ select {
 .classInfo .classInfo-wrap {
   background-color: #1C1C1D !important;
 }
+
 .classInfo .classInfo-wrap * {
   color: #ddd !important;
 }
@@ -1403,6 +1627,7 @@ select {
 .classLatest li {
   background-color: #1C1C1D !important;
 }
+
 .classLatest li * {
   color: #ddd !important;
 }
@@ -1410,6 +1635,7 @@ select {
 .classMat li .titleWrap {
   background-color: #1C1C1D !important;
 }
+
 .classMat li .titleWrap * {
   color: #ddd !important;
 }
@@ -1417,6 +1643,7 @@ select {
 .main-mobile {
   background-color: #1C1C1D !important;
 }
+
 .main-mobile * {
   color: #ddd !important;
 }
@@ -1441,50 +1668,63 @@ select {
   background-color: #1C1C1D !important;
   color: #ddd !important;
 }
+
 .chatting-wrap .chatting-prev .btn {
   background-color: #1C1C1D !important;
   color: #ddd !important;
 }
+
 .chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__alarm p {
   background-color: #39393D !important;
   color: #ddd !important;
 }
+
 .chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .chat {
   background-color: #39393D !important;
   color: #ddd !important;
 }
+
 .chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .chat::before {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/chat-shape.svg") !important;
 }
+
 .chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .chat .chat-link__txt * {
   background-color: #39393D !important;
   color: #ddd !important;
 }
+
 .chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .chat-file .chat-file {
   background-color: #39393D !important;
   color: #ddd !important;
 }
+
 .chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .chat-file .chat-file__txt * {
   background-color: #39393D !important;
   color: #ddd !important;
 }
+
 .chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con.other .chat::before {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/chat-shape2.svg") !important;
 }
+
 .chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .btn-delete {
   color: #757575 !important;
 }
+
 .chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .person .name {
   color: #ddd !important;
 }
+
 .chatting-wrap .chatting-areaWrap .chatting-input .chat-file {
   background-color: #39393D !important;
   color: #ddd !important;
 }
+
 .chatting-wrap .chatting-areaWrap .chatting-input .chat-file__txt * {
   background-color: #39393D !important;
   color: #ddd !important;
 }
+
 .chatting-wrap .chatting-areaWrap .chatting-input .chatting-input__btn .btn.b-red-line {
   color: #fe2929 !important;
 }
@@ -1492,6 +1732,7 @@ select {
 .sch-box.sch-04 {
   border-color: #39393D !important;
 }
+
 .sch-box.sch-04 .sch-04-btn::before {
   background-color: #39393D !important;
 }
@@ -1519,6 +1760,7 @@ select {
 .storage-tit {
   color: #ddd !important;
 }
+
 .storage-tit span {
   color: #1060e1 !important;
 }
@@ -1526,9 +1768,11 @@ select {
 .storage-info .info-area {
   background-color: #39393D !important;
 }
+
 .storage-info .info-area .info-area__li {
   color: #ddd !important;
 }
+
 .storage-info .info-area .info-area__li span {
   color: #FF3B00 !important;
 }
@@ -1536,36 +1780,47 @@ select {
 .state-list {
   color: #757575 !important;
 }
+
 .state-list.active {
   color: #1060E1 !important;
 }
+
 .state-list.active .ico-folder_lg {
   background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/ico-type_folder_b.svg);
 }
+
 .state-list.active .ico-doc_lg {
   background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/ico-doc-a.svg);
 }
+
 .state-list.active .ico-readDoc_lg {
   background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/ico-readDoc-a.svg);
 }
+
 .state-list.active .ico-del_lg {
   background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/ico-del-a.svg);
 }
+
 .state-list.active .ico-changeNm_lg {
   background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/ico-changeNm-a.svg);
 }
+
 .state-list.active .ico-editDoc_lg {
   background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/ico-editDoc-a.svg);
 }
+
 .state-list.active .ico-down_lg {
   background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/ico-down-a.svg);
 }
+
 .state-list.active .ico-moveDoc_lg {
   background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/ico-moveDoc-a.svg);
 }
+
 .state-list.active .ico-copy_lg {
   background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/ico-copy-a.svg);
 }
+
 .state-list.active .ico-share_lg {
   background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/ico-share-a.svg);
 }
@@ -1684,41 +1939,53 @@ select {
 .api-wrap .display-con__box {
   border-color: #39393D !important;
 }
+
 .api-wrap .tit-wrap .tit {
   color: #ddd !important;
 }
+
 .api-info__top span {
   background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/api-logo_dark.svg);
 }
+
 .api-info__top p {
   color: #fff;
 }
+
 .api-list__manual li .img img {
   background-color: #fff;
   border-radius: 50%;
 }
+
 .api-list__manual li p {
   color: #fff;
 }
+
 .api-dev__list li .display-bar .display-con.display-tit {
   background-color: #39393D !important;
 }
+
 .api-login .inner-wrap.api-login__util li {
   background-color: #39393D !important;
 }
+
 .api-mypage__info {
   background-color: #1C1C1D !important;
   border-color: #39393D !important;
 }
+
 .api-mypage__info li {
   color: #ddd !important;
 }
+
 .api-mypage__info li .t-blue {
   color: #1060e1 !important;
 }
+
 .api-main__menu .api-menu__box {
   border-color: #39393D !important;
 }
+
 .api-main__menu .api-menu__box h3,
 .api-main__menu .api-menu__box p {
   color: #ddd !important;
@@ -1733,6 +2000,7 @@ select {
   height: 260px;
   padding-bottom: 0;
 }
+
 @media (max-width: 768px) {
   .main-stu .area__right .main-list .main-stu__use .stu-use__list {
     height: 200px;
@@ -1760,15 +2028,17 @@ select {
 
 .main-stu .area__right .main-list .main-stu__notice .tbl-list table .contents-top .date {
   color: #8F8F93 !important;
-}/*# sourceMappingURL=dark.css.map */
+}
+
+/*# sourceMappingURL=dark.css.map */
 
 /* KHJ APPEND */
 i.pi {
-  color: #fafafa; 
+  color: #fafafa;
 }
 
-.p-datatable .p-datatable-tbody > tr {
-  background-color: #1C1C1D !important; 
+.p-datatable .p-datatable-tbody>tr {
+  background-color: #1C1C1D !important;
 }
 
 .p-paginator .p-component {
@@ -1783,24 +2053,24 @@ i.pi {
   background-color: #39393D !important;
 }
 
-.p-checkbox .p-checkbox-box {  
+.p-checkbox .p-checkbox-box {
   border: 2px solid #1C1C1D !important;
   background-color: #39393D !important;
 }
 
 
 .p-sidebar {
-  background-color: #1C1C1D !important;  
+  background-color: #1C1C1D !important;
 }
 
 
 span.p-sidebar-close-icon {
-  color: #fafafa  !important;  
-} 
+  color: #fafafa !important;
+}
 
-button.p-sidebar-close {  
+button.p-sidebar-close {
   background: #6c757d !important;
-} 
+}
 
 
 .p-datatable-scrollable th.p-frozen-column {
@@ -1815,12 +2085,47 @@ button.p-sidebar-close {
   color: #fff !important;
 }
 
-.calendar-wrap .fc .fc-daygrid-day-number, .main-stu .area__right .main-stu__next .main-list__wrap .list-form__tit p {
-    color: #fff !important;
+.calendar-wrap .fc .fc-toolbar-title,
+.calendar-wrap .fc .fc-daygrid-day-number,
+.main-stu .area__right .main-stu__next .main-list__wrap .list-form__tit p {
+  color: #fff !important;
 }
-.p-dialog > div {
+
+.p-dialog>div {
   background-color: #1C1C1D !important;
 }
-.p-dialog > div * {
-    color: #fff !important;
+
+.p-dialog>div * {
+  color: #fff !important;
+}
+
+
+.main-stu .area__right .main-stu__slide>ul>.swiper-slide.main-stu__prev,
+.main-stu .area__right .main-stu__slide>ul>.swiper-slide.main-stu__next {
+  background-image: none !important;
+}
+
+.main-stu .area__right .main-stu__slide>ul>.swiper-slide.main-stu__prev::before,
+.main-stu .area__right .main-stu__slide>ul>.swiper-slide.main-stu__next::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  filter: saturate(10) brightness(0.5);
+  opacity: 0.3;
+}
+
+.main-stu .area__right .main-stu__slide>ul>.swiper-slide.main-stu__prev::before {
+  background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/images/main-stu_prev.png);
+}
+
+.main-stu .area__right .main-stu__slide>ul>.swiper-slide.main-stu__next::before {
+  background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/images/main-stu_next.png);
 }
