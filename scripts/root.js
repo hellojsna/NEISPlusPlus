@@ -12,6 +12,17 @@ function obfuscateID(id, envUUID) {
     obfuscatedID += envUUID.slice(idLength * step);
     return obfuscatedID;
 }
+
+function overrideDarkModeLogo(darkMode) {
+    const logoElem = document.getElementsByClassName("hd-logo");
+    if (logoElem.length == 0) {
+        return
+    }
+    let image = logoElem[0].getElementsByTagName("img")[0];
+    if (image.src.endsWith("logo.svg")) {
+        image.src = darkMode ? "./assets/neisplus/images/theme/dark/logo.svg" : "./assets/neisplus/images/logo.svg";
+    }
+}
 function checkDarkMode() {
     chrome.storage.sync.get(['envUUID', 'darkMode'], function (result) {
         if (result.darkMode) {
@@ -19,6 +30,7 @@ function checkDarkMode() {
         } else {
             document.getElementById(obfuscateID('NPP_CSS_theme_dark', result.envUUID))?.remove();
         }
+        overrideDarkModeLogo(result.darkMode);
     });
 }
 function injectCSS(file, envUUID) {
