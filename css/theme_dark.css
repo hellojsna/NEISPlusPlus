@@ -1,159 +1,346 @@
-/* From https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/dark.css */
-
 @charset "UTF-8";
 
-/*---- 정렬 ----*/
-/*---- FONT-STYLE ----*/
-/*---- BOX-STYLE ----*/
-/*---- SELECT BAR ----*/
-/*---- ICON ----*/
-/*---- INPUT ----*/
-/*---- CHECKBOX ----*/
-/*----- BREAK-POINT ----*/
-/*---- TRANSITION ----*/
-/*---- CONT SCROLL ----*/
-/*---- TABLE ----*/
-/*---- TEXT CUT ----*/
-/*----- 경로 ----*/
-/*---- 배경 컬러 ----*/
-/*---- 배경 컬러 ----*/
-/*---- 텍스트 컬러 ----*/
-/*---- 공통 ----*/
+/* From https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/dark.css */
+
 ::-webkit-scrollbar-thumb {
   background-color: #39393D !important;
 }
 
 body,
-header {
-  background-color: #000 !important;
-  border-color: #39393D !important;
-  color: #ddd !important;
-}
-
-body .hd-logo span,
-header .hd-logo span {
-  color: #fff !important;
-}
-
-footer {
-  background-color: #000 !important;
-  border-color: #39393D !important;
-  color: #ddd !important;
-}
-
+header,
+footer,
 footer * {
   background-color: #000 !important;
   border-color: #39393D !important;
-  color: #ddd !important;
+}
+
+body .hd-logo span,
+header .hd-logo span,
+.help-list li .btn b,
+.help-link .com-box p,
+.help-tit,
+.help-link__sub .help-link__list a,
+.main-stu .area__right .main-list .main-stu__menu li p,
+.calendar-wrap .fc .fc-toolbar-title,
+.calendar-wrap .fc .fc-daygrid-day-number,
+.main-stu .area__right .main-stu__next .main-list__wrap .list-form__tit p,
+.p-dialog>div * {
+  color: #fff !important;
 }
 
 .com-box {
   background-color: #1C1C1D80 !important;
-  color: #ddd !important;
 }
 
-.com-box h3 {
-  color: #ddd !important;
-}
-
-.com-box span {
-  color: #ddd !important;
-}
-
-.com-box .btn {
+body, header, footer, footer *,
+.com-box, .com-box h3, .com-box span, .com-box .btn,
+.input-row label,
+table th, table th *, table td, table td .btn, table td .answer-mark, table td .tbl-tit-cut, table td .name-wrap *, .tbl-tit,
+ul.tbl-view>li .view-col div.td, ul.tbl-view>li .view-col div.td div, ul.tbl-view>li .view-col div.td b, ul.tbl-view>li .view-col div.td span, ul.tbl-view>li .view-col div.td label,
+.pagination *,
+header .area__right *, header .area__left *, header .hd-quick li a,
+header .gnb-wrap .gnb-info-tit *, 
+header .gnb-wrap .gnb-info-cont>li>a,
+header .gnb-wrap .gnb-scroll-wrap>li>a,
+.snb-wrap .snb .tree-menu__box .tree-menu__tit,
+.snb-wrap .snb .tree-menu__box .tree-menu .depth-txt *,
+.tree-menu>li>a,
+.tree-menu .depth-txt.depth1-txt,
+.chk-tree label,
+.chk-tree.active label,
+.sch-wrap .sch-select .sch-select-col .sch-label,
+.sub-tit-b,
+.toggle-scope .page-simple ul li .active-wrap p,
+.toggle-scope .page-detail h3 button span,
+.checkbox input+label,
+.b-blue-line,
+.display-con, .display-con *,
+.sub-tit-bs,
+.cont-area *,
+.participant-top *,
+.title,
+.participant-txt-li .state,
+.group-create__stuList *,
+.title-wrap *,
+.group-create .person *,
+.hashTag-ul .hashTag-li,
+#calendar *,
+.cal-category *,
+.calendar-btn *,
+.timetable button.on,
+.modal-tit h2,
+.modal-cont-wrap .modal-cont,
+.tab-menu li.on .tab-tit,
+.drag-set-wrap h2,
+.validity>span,
+.card-detail-cont-list p,
+.card-detail-cont-list b,
+.fms_subTitle p,
+.fms_inner h3,
+.fms_inner article p,
+.fms_inner article .fms_inner-con h4,
+.fms_inner article,
+.page-top__tit *,
+.list-form__topWrap.topWrap2 *,
+.list-form.list-style-recommend .tit,
+.cont-wrap .tit,
+.view-col__wrap .view-col__wrap-tit,
+.b-gray-line,
+.badge-detail *,
+.modal-cont *,
+.list-form.badge-rank *,
+.badge-txt,
+.question-edit .question-edit__right *,
+.question-con .question-con__question,
+.main-tit,
+.list-form.answer-note-style .list-form__topWrap .list-form__tit .answer-note-txt,
+.state-wrap__count,
+.state-wrap__count b,
+.contents-top span,
+.question-type .question-type__select .tit,
+.btn .f-12,
+.upload-box__bot *,
+.upload-area *,
+.upload-info .upload-txt *,
+.plan-wrap .plan-wrap__tit h2,
+.plan-wrap .plan-wrap__list ul li .event b,
+.classInfo .classInfo-wrap *,
+.classLatest li *,
+.classMat li .titleWrap *,
+.main-mobile *,
+.chatting-wrap,
+.chatting-wrap .chatting-prev .btn,
+.chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .person .name,
+.storage-tit,
+.storage-info .info-area .info-area__li,
+.api-wrap .tit-wrap .tit,
+.api-mypage__info li,
+.main-stu .area__right .main-stu__slide .main-stu__tit,
+.main-stu .area__right .main-stu__next .main-list__wrap .list-form__tit .date-list,
+.main-stu .area__right .main-list .main-stu__notice .tit-wrap button,
+.api-main__menu .api-menu__box h3,
+.api-main__menu .api-menu__box p,
+.list-form .state,
+.error_con_wrap {
   color: #ddd !important;
 }
 
 select,
 input[type=text],
-input[type=number] {
+input[type=number],
+.viewDetail .view-info,
+.viewDetail .view-info *,
+.viewDetail .view-con *,
+.viewDetail .view-nav *,
+.viewDetail .view_attach,
+.viewDetail .view_attach *,
+.viewComment_ *,
+.multi-file-upload * {
   background-color: #1C1C1D !important;
   color: #ddd !important;
   border-color: #39393D !important;
 }
 
-.input-row label {
-  color: #ddd !important;
-}
-
-button:disabled {
+button:disabled,
+ul.tbl-view,
+.pagination a.active,
+header li .btn,
+header .hd-util .alert-pop button,
+header .gnb-wrap .gnb-info-cont>li>a>div,
+.snb-wrap .snb-door:before,
+.snb-wrap .snb .tree-menu__box .tree-menu .depth-txt.depth1-txt.current,
+.snb-wrap .snb .tree-menu__box .tree-menu .depth-txt.current,
+.toggle-wrap,
+.toggle-scope .page-simple ul li .active-wrap .btn-wrap,
+.checkbox input,
+.drag-set-wrap .drag-zone div .pick-none,
+.contents-bot-txt.addLine::after,
+.snb-door2:before,
+.viewComment_ *::before,
+.button-pop__ul,
+.display-con .checkbox input+label:before,
+.participant-txt-li.active,
+.group-create .person,
+.display-con .type ul,
+.timetable button.on,
+.hashTag-ul .hashTag-li,
+.participant-infoWrap__cont,
+.participant-infoWrap__cont .tbl-view-mypage .checkbox input+label:before,
+.groupList,
+.content-info__r,
+.fullCheck.bg-skyblue input[type=radio]:checked+label,
+.list-form.loading .list-form__tit .subject,
+.list-form.loading .list-form__tit .font-s,
+.list-form.loading .list-form__tit .button-wrap,
+.list-form.loading.list-style-recommend .list-form__top,
+.list-form.loading.list-style-recommend .list-form__tit .tit,
+.list-form.loading.list-style-recommend .list-form__tit .subject2,
+.list-form.loading.list-style-recommend .list-form__tit .like-btn,
+.list-form.loading.prev-content .list-form__top .button-wrap,
+.list-form.loading.prev-content .list-form__tit .select-btn,
+.list-form.loading.list-style-recommend2 .list-form__top .state,
+.list-form.loading.list-style-recommend2 .list-form__top .tit,
+.list-form.loading.list-style-recommend2 .list-form__top .sub-tit,
+.list-form.loading.list-style-recommend2 .list-form__top .name,
+.question-list .question-list__check,
+.question-list-btn,
+.question-top,
+.question-con .question-con__explain-li,
+.btn-more .more-con,
+.level-table table th,
+.fullCheck input[type=checkbox]+label,
+.question-type .question-type__select,
+.btn-move,
+.check-title,
+.participant-content__ul.style02 .participant-content__li .btn.paperList-btn,
+.participant-content__ul .participant-content__li .addGroup-btn .btn,
+.content-info .content-info__li .content-info__r .info__r-ul .info__r-li,
+.sch-box.sch-04 .sch-04-btn::before,
+.storage-info .info-area,
+.b-gray-line,
+.api-dev__list li .display-bar .display-con.display-tit,
+.api-login .inner-wrap.api-login__util li,
+.p-paginator .p-component,
+.p-dropdown {
   background-color: #39393D !important;
 }
 
-textarea {
+table, textarea,
+table th,
+ul.tbl-view>li>div,
+ul.tbl-view>li .view-col div.td,
+header .area__left .tchInfo, header .area__left .tchInfo *,
+header .hd-util .alert-pop,
+header .gnb-wrap .gnb-tit,
+header .gnb-wrap .gnb-info,
+header .gnb-wrap .gnb,
+header .gnb-wrap .gnb-cont,
+.tree-wrap .tree-left,
+.tree-wrap .tree-menu__box,
+.toggle-scope .page-detail .active-wrap,
+.b-red-line,
+.b-blue-line,
+.b-black-line,
+.modal-wrap,
+.bg-gray,
+.bg-white,
+.card-detail-cont,
+.fms_subTitle,
+.fms_inner article,
+.error_con_wrap,
+.tbl-thead,
+.button-pop__ul .checkbox input+label:before,
+.participant-txt-li.active .checkbox input+label:before,
+.group-create__stuList,
+.group-create__stuList .stuList,
+.groupList,
+.group-create .person.current,
+.inner-wrap .inner-left,
+.participant-infoWrap__tit,
+.participant-infoWrap__cont .checkbox input+label:before,
+.bg-blue,
+.bg-skyblue,
+.modal-right .answer-wrap,
+.list-form__topWrap.topWrap2,
+.fullCheck input[type=radio]+label,
+.list-form.list-style-recommend,
+.list-form.list-style-recommend2,
+.button-pop__top,
+.list-form.loading,
+.list-form.loading.list-style-recommend2 .list-form__top,
+.page-list table td,
+.tbl-list.status-table table tr.bg-skyblue,
+.fullCheck.plusChk input[type=checkbox]+label,
+.question-list .question-list__check .checkbox input+label:before,
+.question-edit .question-edit__right,
+.question-top .checkbox input+label:before,
+.question-con,
+.list-form.answer-note-style,
+.level-table table th .level,
+.level-table table td,
+.top-sch-wrap,
+.contents .question-form .area__left,
+.question-type .question-type__select .checkbox input+label:before,
+.upload-box__top,
+.list-form.list-style-page,
+.tbl-list.status-table table tr.bg-gray,
+.classInfo .classInfo-wrap,
+.classLatest li,
+.classMat li .titleWrap,
+.main-mobile,
+.chatting-wrap,
+.chatting-wrap .chatting-prev .btn,
+.video-box__table.tbl-list table td,
+.api-mypage__info,
+.p-datatable .p-datatable-tbody>tr,
+.p-datatable .p-paginator-bottom,
+.p-sidebar,
+.p-dialog>div,
+.list-form .state {
   background-color: #1C1C1D !important;
-  border-color: #39393D !important;
 }
 
-::-moz-placeholder {
+::-moz-placeholder, ::placeholder,
+.tbl-des,
+header .gnb-wrap .gnb-scroll-wrap>li .gnb__lnb>li>a,
+.tree-menu>li>ul>li>a,
+.tree-menu .depth-txt,
+.toggle-scope .page-detail .tree-check__tit,
+.timetable button,
+ul.input-wrap li h4,
+ul.input-wrap .checkbox label,
+ul.input-wrap .checkbox label+input+span,
+.input-hyphen,
+.card-detail-cont-list h5,
+.contents-bot-txt,
+.participant-txt-li .person .name,
+.main-stu .area__right .main-list .main-stu__notice .tbl-list table .contents-top .date {
   color: #8F8F93 !important;
 }
 
-::placeholder {
-  color: #8F8F93 !important;
-}
-
-table {
-  background-color: #1C1C1D !important;
-}
-
+textarea,
 table,
-table * {
-  border-color: #39393D !important;
-}
-
-table th {
-  background-color: #1C1C1D !important;
-  color: #ddd !important;
-}
-
-table th * {
-  color: #ddd !important;
-}
-
-table td {
-  border-color: #39393D !important;
-  color: #ddd !important;
-}
-
-table td .btn {
-  color: #ddd !important;
-}
-
-table td .answer-mark {
-  color: #ddd !important;
-}
-
-table td .tbl-tit-cut {
-  color: #ddd !important;
-}
-
-table td .name-wrap * {
-  color: #ddd !important;
-}
-
-.tbl-tit {
-  color: #ddd !important;
-}
-
-.tbl-des {
-  color: #8F8F93 !important;
-}
-
-ul.tbl-view {
-  background-color: #39393D !important;
-  border-color: #39393D !important;
-}
-
-ul.tbl-view>li {
-  border-color: #39393D !important;
-}
-
-ul.tbl-view>li>div {
-  background-color: #1C1C1D !important;
-}
-
-ul.tbl-view>li .view-col>div {
+table *,
+table td,
+ul.tbl-view,
+ul.tbl-view>li,
+ul.tbl-view>li .view-col>div,
+header .area__right *,
+header .gnb-wrap .gnb-tit,
+header .gnb-wrap .gnb-info,
+.snb-wrap *, .tree-wrap .tree-menu__box,
+.tit-btn-group .b-blue-line,
+.toggle-scope .page-detail .tree-menu__box,
+.tab-menu,
+.drag-set-wrap .drag-set-list h2,
+.drag-set-wrap .tree-wrap *,
+.checkbox-list-wrap,
+.tbl-tbody,
+.display-con .num,
+.participant-content__ul *,
+.title,
+.group-create__stuList *,
+.display-con .type ul,
+.participant-infoWrap__li,
+.participant-info,
+.participant-info *,
+.viewComment.viewComment-wrap,
+.b-gray-line,
+.list-form.badge-rank,
+.question-list .question-list__top,
+.question-list .question,
+.question-list-btn,
+.question-con .question-con__explain,
+.btn-more .more-con,
+.upload-box__bot,
+.upload-area,
+.upload-info,
+.group-create .group-create__groupList .groupList .groupList-ul,
+.list-form .list-form__topWrap .list-form__tit .question,
+.sch-box.sch-04,
+.api-wrap .display-con__box,
+.api-mypage__info,
+.api-main__menu .api-menu__box {
   border-color: #39393D !important;
 }
 
@@ -163,186 +350,53 @@ ul.tbl-view>li .view-col h5.th {
   border-right-color: #39393D !important;
 }
 
-ul.tbl-view>li .view-col div.td {
-  color: #ddd !important;
-  background-color: #1C1C1D !important;
-}
-
-ul.tbl-view>li .view-col div.td div {
-  color: #ddd !important;
-}
-
-ul.tbl-view>li .view-col div.td .setting-toggle .toggleSwitch .toggleButton {
+ul.tbl-view>li .view-col div.td .setting-toggle .toggleSwitch .toggleButton,
+.sub-tit-s, .sub-tit-c,
+.toggle-wrap h4,
+.toggle-wrap p,
+.display-con .basic,
+.display-con .setting-toggle .toggleSwitch .toggleButton,
+.sub-tit-ss,
+.participant-txt-li .person .name-s,
+.contents .com-box .tit-wrap .btn,
+.page-top__more *,
+.answer-toggle-btn span {
   color: #7D7D82 !important;
 }
 
-ul.tbl-view>li .view-col div.td b {
-  color: #ddd !important;
-}
-
-ul.tbl-view>li .view-col div.td span {
-  color: #ddd !important;
-}
-
-ul.tbl-view>li .view-col div.td label {
-  color: #ddd !important;
-}
-
-.pagination * {
-  color: #ddd !important;
-}
-
-.pagination a.active {
-  background-color: #39393D !important;
-}
-
-/*---- CONTENTS ----*/
-header .gnb-wrap .gnb .gnb-ul .gnb-li .gnbLnb-wrap .gnb__lnb li a.current {
+header .gnb-wrap .gnb .gnb-ul .gnb-li .gnbLnb-wrap .gnb__lnb li a.current,
+header .gnb-wrap .gnb .gnb-ul .gnb-li.active .link,
+header .hd-quick li a.current,
+.state-list.active {
   color: #1060E1 !important;
 }
 
-header .gnb-wrap .gnb .gnb-ul .gnb-li.active .link {
-  color: #1060E1 !important;
-}
-
-header .area__left * {
-  color: #ddd !important;
-}
-
-header .area__left .tchInfo {
-  background-color: #1C1C1D !important;
-}
-
-header .area__left .tchInfo * {
-  background-color: #1C1C1D !important;
-}
-
-header .area__right * {
+header .area__right *,
+.button-pop__ul *,
+.content-info__r * {
   color: #ddd !important;
   border-color: #39393D !important;
-}
-
-header .hd-quick li a {
-  color: #ddd !important;
-}
-
-header .hd-quick li a.current {
-  color: #1060E1 !important;
-}
-
-header li .btn {
-  background-color: #39393D !important;
 }
 
 header .hd-util .quick-pop {
   background-color: #1C1C1D80 !important;
 }
 
-header .hd-util .alert-pop {
-  background-color: #1C1C1D !important;
-}
-
-header .hd-util .alert-pop button {
-  background-color: #39393D !important;
-}
-
 header .gnb-wrap {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-header .gnb-wrap .gnb-tit,
-header .gnb-wrap .gnb-info,
-header .gnb-wrap .gnb,
-header .gnb-wrap .gnb-cont {
-  background-color: #1C1C1D !important;
-}
-
-header .gnb-wrap .gnb-tit,
-header .gnb-wrap .gnb-info {
-  border-color: #39393D !important;
-}
-
-header .gnb-wrap .gnb-info-tit * {
-  color: #ddd !important;
-}
-
-header .gnb-wrap .gnb-info-cont>li>a {
-  color: #ddd !important;
-}
-
-header .gnb-wrap .gnb-info-cont>li>a>div {
-  background-color: #39393D !important;
-}
-
-header .gnb-wrap .gnb-scroll-wrap>li>a {
-  color: #ddd !important;
-}
-
-header .gnb-wrap .gnb-scroll-wrap>li .gnb__lnb>li>a {
-  color: #8F8F93 !important;
-}
-
-.snb-wrap .fs-snb-tit span {
+.snb-wrap .fs-snb-tit span,
+.file-upload input:-moz-read-only,
+.file-upload input:read-only {
   background-color: #1C1C1D !important;
   color: #8F8F93 !important;
 }
 
-.snb-wrap .snb-door:before {
-  background-color: #39393D !important;
-}
-
-.snb-wrap * {
-  border-color: #39393D !important;
-}
-
-.snb-wrap .snb .tree-menu__box .tree-menu__tit {
-  color: #ddd !important;
-}
-
-.snb-wrap .snb .tree-menu__box .tree-menu .depth-txt * {
-  color: #ddd !important;
-}
-
-.snb-wrap .snb .tree-menu__box .tree-menu .depth-txt.depth1-txt.current {
-  background-color: #39393D !important;
-}
-
-.snb-wrap .snb .tree-menu__box .tree-menu .depth-txt.current {
-  background-color: #39393D !important;
-}
-
-.tree-wrap .tree-left {
-  background-color: #1C1C1D !important;
-}
-
-.tree-wrap .tree-menu__box {
-  background-color: #1C1C1D !important;
-  border-color: #39393D !important;
-}
-
-.tree-menu>li>a {
-  color: #ddd !important;
-}
-
-.tree-menu>li>ul>li>a {
-  color: #8F8F93 !important;
-}
-
-.tree-menu .depth-txt.depth1-txt {
-  color: #ddd !important;
-}
-
-.tree-menu .depth-txt {
-  color: #8F8F93 !important;
-}
-
-.chk-tree .chk-tree__box {
+.chk-tree .chk-tree__box,
+.checkbox input+label:before {
   background-color: #39393D !important;
   border: none !important;
-}
-
-.chk-tree label {
-  color: #ddd !important;
 }
 
 .chk-tree.active .chk-tree__box {
@@ -350,87 +404,16 @@ header .gnb-wrap .gnb-scroll-wrap>li .gnb__lnb>li>a {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_chk_01.svg") !important;
 }
 
-.chk-tree.active label {
-  color: #ddd !important;
-}
-
 .sch-wrap {
   border: none;
-}
-
-.sch-wrap .sch-select .sch-select-col .sch-label {
-  color: #ddd !important;
-}
-
-.tit-btn-group .b-blue-line {
-  border-color: #39393D !important;
-}
-
-.sub-tit-b {
-  color: #ddd !important;
-}
-
-.sub-tit-s {
-  color: #7D7D82 !important;
-}
-
-.sub-tit-c {
-  color: #7D7D82 !important;
-}
-
-.toggle-wrap {
-  background-color: #39393D !important;
-}
-
-.toggle-wrap h4,
-.toggle-wrap p {
-  color: #7D7D82 !important;
 }
 
 .toggle-wrap .btn-wrap {
   background-color: #28282a;
 }
 
-.toggle-scope .page-simple ul li .active-wrap p {
-  color: #ddd !important;
-}
-
-.toggle-scope .page-simple ul li .active-wrap .btn-wrap {
-  background-color: #39393D !important;
-}
-
 .toggle-scope .page-detail h3:after {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_arr_scope.svg") !important;
-}
-
-.toggle-scope .page-detail h3 button span {
-  color: #ddd !important;
-}
-
-.toggle-scope .page-detail .active-wrap {
-  background-color: #1C1C1D !important;
-}
-
-.toggle-scope .page-detail .tree-check__tit {
-  color: #8F8F93 !important;
-}
-
-.toggle-scope .page-detail .tree-menu__box {
-  border-color: #39393D !important;
-}
-
-/*---- COMPONENT ----*/
-.checkbox input {
-  background-color: #39393D !important;
-}
-
-.checkbox input+label:before {
-  background-color: #39393D !important;
-  border: none !important;
-}
-
-.checkbox input+label {
-  color: #ddd !important;
 }
 
 .checkbox input:checked+label:before {
@@ -438,116 +421,31 @@ header .gnb-wrap .gnb-scroll-wrap>li .gnb__lnb>li>a {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_chk_01.svg") !important;
 }
 
-.b-red-line,
-.b-blue-line,
-.b-black-line {
-  background-color: #1C1C1D !important;
-}
-
-.b-blue-line {
-  color: #ddd !important;
-}
-
-.file-upload input:-moz-read-only {
-  background-color: #1C1C1D !important;
-  color: #8F8F93 !important;
-}
-
-.file-upload input:read-only {
-  background-color: #1C1C1D !important;
-  color: #8F8F93 !important;
-}
-
 .timetable thead th {
   border-bottom: 1px solid #39393D !important;
-}
-
-.timetable button {
-  color: #8F8F93 !important;
-}
-
-.timetable button.on {
-  background-color: #39393D !important;
-  color: #ddd !important;
 }
 
 .modal {
   background-color: black;
 }
 
-.modal-tit {
+.modal-tit,
+.drag-set-wrap .drag-zone,
+.list-form.include-addClass,
+.display-con .display-con__txt,
+.calendar-btn,
+.color-select,
+.color-select-user,
+.sch-03-btn {
   background-color: #1C1C1D !important;
   border-color: #39393D !important;
-}
-
-.modal-tit h2 {
-  color: #ddd !important;
-}
-
-.modal-wrap {
-  background-color: #1C1C1D !important;
-}
-
-.modal-cont-wrap .modal-cont {
-  color: #ddd !important;
-}
-
-ul.input-wrap li h4 {
-  color: #8F8F93 !important;
-}
-
-ul.input-wrap .checkbox label {
-  color: #8F8F93 !important;
-}
-
-ul.input-wrap .checkbox label+input+span {
-  color: #8F8F93 !important;
-}
-
-.input-hyphen {
-  color: #8F8F93 !important;
-}
-
-.bg-gray,
-.bg-white {
-  background-color: #1C1C1D !important;
-}
-
-.tab-menu {
-  border-color: #39393D !important;
-}
-
-.tab-menu li.on .tab-tit {
-  color: #ddd !important;
 }
 
 .tab-menu li.on .tab-tit::after {
   background-color: #ddd;
 }
 
-.drag-set-wrap h2 {
-  color: #ddd !important;
-}
-
-.drag-set-wrap .drag-zone {
-  background-color: #1C1C1D !important;
-  border-color: #39393D !important;
-}
-
-.drag-set-wrap .drag-zone div .drag-zone-pick button {
-  background-color: #39393D !important;
-  color: #ddd !important;
-  border: none !important;
-}
-
-.drag-set-wrap .drag-zone div .pick-none {
-  background-color: #39393D !important;
-}
-
-.drag-set-wrap .drag-set-list h2 {
-  border-color: #39393D !important;
-}
-
+.drag-set-wrap .drag-zone div .drag-zone-pick button,
 .drag-set-wrap .drag-set-list button {
   background-color: #39393D !important;
   color: #ddd !important;
@@ -559,34 +457,12 @@ ul.input-wrap .checkbox label+input+span {
   color: #fff !important;
 }
 
-.drag-set-wrap .tree-wrap * {
-  border-color: #39393D !important;
-}
-
 .card-detail-btn {
   color: #8F8F93;
 }
 
 .card-detail-cont {
-  background-color: #1C1C1D !important;
   box-shadow: 1px 1px 10px 0px rgba(158, 158, 158, 0.4) !important;
-}
-
-.card-detail-cont-list h5 {
-  color: #8F8F93 !important;
-}
-
-.card-detail-cont-list p,
-.card-detail-cont-list b {
-  color: #ddd !important;
-}
-
-.checkbox-list-wrap {
-  border-color: #39393D !important;
-}
-
-.validity>span {
-  color: #ddd !important;
 }
 
 .validity>i {
@@ -597,108 +473,12 @@ ul.input-wrap .checkbox label+input+span {
   border: none !important;
 }
 
-.fms_subTitle {
-  background-color: #1C1C1D !important;
-  border: 0;
-}
-
-.fms_subTitle p {
-  color: #ddd !important;
-}
-
-.fms_inner h3 {
-  color: #ddd !important;
-}
-
+.fms_subTitle,
 .fms_inner article {
-  background-color: #1C1C1D !important;
-  color: #ddd !important;
   border: 0;
-}
-
-.fms_inner article p {
-  color: #ddd !important;
-}
-
-.fms_inner article .fms_inner-con h4 {
-  color: #ddd !important;
-}
-
-.contents-bot-txt {
-  color: #8F8F93 !important;
-}
-
-.contents-bot-txt.addLine::after {
-  background-color: #39393D !important;
-}
-
-.error_con_wrap {
-  background-color: #1C1C1D !important;
-  color: #ddd !important;
 }
 
 .tbl-thead {
-  border-color: #39393D !important;
-  background-color: #1C1C1D !important;
-}
-
-.tbl-tbody {
-  border-color: #39393D !important;
-}
-
-.snb-door2:before {
-  background-color: #39393D !important;
-}
-
-.viewDetail .view-info {
-  background-color: #1C1C1D !important;
-  color: #ddd !important;
-  border-color: #39393D !important;
-}
-
-.viewDetail .view-info * {
-  background-color: #1C1C1D !important;
-  color: #ddd !important;
-  border-color: #39393D !important;
-}
-
-.viewDetail .view-con * {
-  background-color: #1C1C1D !important;
-  color: #ddd !important;
-  border-color: #39393D !important;
-}
-
-.viewDetail .view-nav * {
-  background-color: #1C1C1D !important;
-  color: #ddd !important;
-  border-color: #39393D !important;
-}
-
-.viewDetail .view_attach {
-  background-color: #1C1C1D !important;
-  color: #ddd !important;
-  border-color: #39393D !important;
-}
-
-.viewDetail .view_attach * {
-  background-color: #1C1C1D !important;
-  color: #ddd !important;
-  border-color: #39393D !important;
-}
-
-.viewComment_ * {
-  background-color: #1C1C1D !important;
-  color: #ddd !important;
-  border-color: #39393D !important;
-}
-
-.viewComment_ *::before {
-  background-color: #39393D !important;
-}
-
-.multi-file-upload * {
-  background-color: #1C1C1D !important;
-  color: #ddd !important;
   border-color: #39393D !important;
 }
 
@@ -1006,10 +786,6 @@ ul.input-wrap .checkbox label+input+span {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico-stu_survey.svg") !important;
 }
 
-header .hd-util>li .btn.active {
-  background-color: #1060E1 !important;
-}
-
 select {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_arr_sch.svg") !important;
 }
@@ -1032,654 +808,35 @@ select {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/ico_card_more.svg") !important;
 }
 
-.list-form.include-addClass {
-  background-color: #1C1C1D !important;
-  border-color: #39393D !important;
-}
-
-.list-form .state {
-  background-color: #1C1C1D !important;
-  color: #ddd !important;
-}
-
-.button-pop__ul {
-  background-color: #39393D !important;
-}
-
-.button-pop__ul * {
-  color: #ddd !important;
-  border-color: #39393D !important;
-}
-
-.button-pop__ul .checkbox input+label:before {
-  background-color: #1C1C1D !important;
-}
-
-.display-con {
-  color: #ddd !important;
-}
-
-.display-con * {
-  color: #ddd !important;
-}
-
-.display-con .num {
-  border-color: #39393D !important;
-}
-
-.display-con .basic {
-  color: #7D7D82 !important;
-}
-
-.display-con .setting-toggle .toggleSwitch .toggleButton {
-  color: #7D7D82 !important;
-}
-
-.display-con .checkbox input+label:before {
-  background-color: #39393D !important;
-}
-
-.display-con .display-con__txt {
-  background-color: #1C1C1D !important;
-  border-color: #39393D !important;
-}
-
-.display-con .type ul {
-  background-color: #39393D !important;
-  border-color: #39393D !important;
-}
-
-.sub-tit-bs {
-  color: #ddd !important;
-}
-
-.sub-tit-ss {
-  color: #7D7D82 !important;
-}
-
-.cont-area * {
-  color: #ddd !important;
-}
-
-.participant-top * {
-  color: #ddd !important;
-}
-
-.participant-content__ul * {
-  border-color: #39393D !important;
-}
-
-.title {
-  border-color: #39393D !important;
-  color: #ddd !important;
-}
-
-.participant-txt-li.active {
-  background-color: #39393D !important;
-}
-
-.participant-txt-li.active .checkbox input+label:before {
-  background-color: #1C1C1D !important;
-}
-
-.participant-txt-li .person .name {
-  color: #8F8F93 !important;
-}
-
-.participant-txt-li .person .name-s {
-  color: #7D7D82 !important;
-}
-
-.participant-txt-li .state {
-  color: #ddd !important;
-}
-
-.contents .com-box .tit-wrap .btn {
-  color: #7D7D82 !important;
-}
-
-.group-create__stuList {
-  background-color: #1C1C1D !important;
-}
-
-.group-create__stuList * {
-  border-color: #39393D !important;
-  color: #ddd !important;
-}
-
-.group-create__stuList .stuList {
-  background-color: #1C1C1D !important;
-}
-
-.title-wrap * {
-  color: #ddd !important;
-}
-
-.groupList {
-  background-color: #1C1C1D !important;
-}
-
 .group-create .person {
   border-color: #1C1C1D !important;
-  background-color: #39393D !important;
 }
 
-.group-create .person * {
-  color: #ddd !important;
-}
-
-.group-create .person.current {
-  background-color: #1C1C1D !important;
-}
-
-.hashTag-ul .hashTag-li {
-  background-color: #39393D !important;
-  color: #ddd !important;
-}
-
-.inner-wrap .inner-left {
-  background-color: #1C1C1D !important;
-}
-
-.participant-infoWrap__li {
-  border-color: #39393D !important;
-}
-
-.participant-infoWrap__tit {
-  background-color: #1C1C1D !important;
-}
-
-.participant-infoWrap__cont {
-  background-color: #39393D !important;
-}
-
-.participant-infoWrap__cont .checkbox input+label:before {
-  background-color: #1C1C1D !important;
-}
-
-.participant-infoWrap__cont .tbl-view-mypage .checkbox input+label:before {
-  background-color: #39393D !important;
-}
-
-.participant-info {
-  border-color: #39393D !important;
-}
-
-.participant-info * {
-  border-color: #39393D !important;
-}
-
-.bg-blue {
-  background-color: #1C1C1D !important;
-}
-
-.bg-skyblue {
-  background-color: #1C1C1D !important;
-}
-
-.groupList {
-  background-color: #39393D !important;
-}
-
-#calendar * {
-  color: #ddd !important;
-}
-
-.cal-category * {
-  color: #ddd !important;
-}
-
-.calendar-btn {
-  background-color: #1C1C1D !important;
-  border-color: #39393D !important;
-}
-
-.calendar-btn * {
-  color: #ddd !important;
-}
-
-.color-select {
-  background-color: #1C1C1D !important;
-  border-color: #39393D !important;
-}
-
-.color-selected.active::before {
-  display: none;
-}
-
+.color-selected.active::before,
 .color-wrap.position-bottom .color-selected.active::before {
   display: none;
-}
-
-.color-select-user {
-  background-color: #1C1C1D !important;
-  border-color: #39393D !important;
-}
-
-.modal-right .answer-wrap {
-  background-color: #1C1C1D !important;
-}
-
-.viewComment.viewComment-wrap {
-  border-color: #39393D !important;
-}
-
-.content-info__r {
-  background-color: #39393D !important;
-}
-
-.content-info__r * {
-  color: #ddd !important;
-  border-color: #39393D !important;
-}
-
-.page-top__tit * {
-  color: #ddd !important;
-}
-
-.page-top__more * {
-  color: #7D7D82 !important;
-}
-
-.list-form__topWrap.topWrap2 {
-  background-color: #1C1C1D !important;
-}
-
-.list-form__topWrap.topWrap2 * {
-  color: #ddd !important;
-}
-
-.sch-03-btn {
-  background-color: #1C1C1D !important;
-  border-color: #39393D !important;
-}
-
-.fullCheck input[type=radio]+label {
-  background-color: #1C1C1D !important;
-}
-
-.fullCheck.bg-skyblue input[type=radio]:checked+label {
-  background-color: #39393D !important;
-}
-
-.list-form.list-style-recommend {
-  background-color: #1C1C1D !important;
-}
-
-.list-form.list-style-recommend .tit {
-  color: #ddd !important;
-}
-
-.list-form.list-style-recommend2 {
-  background-color: #1C1C1D !important;
-}
-
-.b-gray-line {
-  background-color: #39393D !important;
-  border-color: #39393D !important;
-  color: #ddd !important;
-}
-
-.cont-wrap .tit {
-  color: #ddd !important;
-}
-
-.view-col__wrap .view-col__wrap-tit {
-  color: #ddd !important;
-}
-
-.button-pop__top {
-  background-color: #1C1C1D !important;
-}
-
-.list-form.loading {
-  background-color: #1C1C1D !important;
-}
-
-.list-form.loading .list-form__tit .subject {
-  background-color: #39393D !important;
-}
-
-.list-form.loading .list-form__tit .font-s {
-  background-color: #39393D !important;
-}
-
-.list-form.loading .list-form__tit .button-wrap {
-  background-color: #39393D !important;
-}
-
-.list-form.loading.list-style-recommend .list-form__top {
-  background-color: #39393D !important;
-}
-
-.list-form.loading.list-style-recommend .list-form__tit .tit {
-  background-color: #39393D !important;
-}
-
-.list-form.loading.list-style-recommend .list-form__tit .subject2 {
-  background-color: #39393D !important;
-}
-
-.list-form.loading.list-style-recommend .list-form__tit .like-btn {
-  background-color: #39393D !important;
-}
-
-.list-form.loading.prev-content .list-form__top .button-wrap {
-  background-color: #39393D !important;
-}
-
-.list-form.loading.prev-content .list-form__tit .select-btn {
-  background-color: #39393D !important;
-}
-
-.list-form.loading.list-style-recommend2 .list-form__top {
-  background-color: #1C1C1D !important;
-}
-
-.list-form.loading.list-style-recommend2 .list-form__top .state {
-  background-color: #39393D !important;
-}
-
-.list-form.loading.list-style-recommend2 .list-form__top .tit {
-  background-color: #39393D !important;
-}
-
-.list-form.loading.list-style-recommend2 .list-form__top .sub-tit {
-  background-color: #39393D !important;
-}
-
-.list-form.loading.list-style-recommend2 .list-form__top .name {
-  background-color: #39393D !important;
-}
-
-.page-list table td {
-  background-color: #1C1C1D !important;
-}
-
-.tbl-list.status-table table tr.bg-skyblue {
-  background-color: #1C1C1D !important;
-}
-
-.fullCheck.plusChk input[type=checkbox]+label {
-  background-color: #1C1C1D !important;
-}
-
-.badge-detail * {
-  color: #ddd !important;
-}
-
-.modal-cont * {
-  color: #ddd !important;
-}
-
-.list-form.badge-rank {
-  border-color: #39393D !important;
-}
-
-.list-form.badge-rank * {
-  color: #ddd !important;
-}
-
-.badge-txt {
-  color: #ddd !important;
-}
-
-.question-list .question-list__top {
-  border-color: #39393D !important;
-}
-
-.question-list .question {
-  border-color: #39393D !important;
-}
-
-.question-list .question-list__check {
-  background-color: #39393D !important;
-}
-
-.question-list .question-list__check .checkbox input+label:before {
-  background-color: #1C1C1D !important;
-}
-
-.question-edit .question-edit__right {
-  background-color: #1C1C1D !important;
-}
-
-.question-edit .question-edit__right * {
-  color: #ddd !important;
-}
-
-.question-list-btn {
-  border-color: #39393D !important;
-  background-color: #39393D !important;
-}
-
-.question-top {
-  background-color: #39393D !important;
-}
-
-.question-top .checkbox input+label:before {
-  background-color: #1C1C1D !important;
-}
-
-.question-con {
-  background-color: #1C1C1D !important;
-}
-
-.question-con .question-con__explain {
-  border-color: #39393D !important;
-}
-
-.question-con .question-con__explain-li {
-  background-color: #39393D !important;
-}
-
-.question-con .question-con__question {
-  color: #ddd !important;
 }
 
 .b-blue-dark-line {
   background: none !important;
 }
 
-.btn-more .more-con {
-  background-color: #39393D !important;
-  border-color: #39393D !important;
-}
-
-.main-tit {
-  color: #ddd !important;
-}
-
-.list-form.answer-note-style {
-  background-color: #1C1C1D !important;
-}
-
 .list-form .list-form__topWrap .list-form__tit .question .question-blur {
   background: linear-gradient(to bottom, transparent 0%, #1C1C1D 80%, #1C1C1D 100%);
 }
 
-.list-form.answer-note-style .list-form__topWrap .list-form__tit .answer-note-txt {
-  color: #ddd !important;
-}
-
-.state-wrap__count {
-  color: #ddd !important;
-}
-
-.state-wrap__count b {
-  color: #ddd !important;
-}
-
-.contents-top span {
-  color: #ddd !important;
-}
-
-.level-table table th {
-  background-color: #39393D !important;
-}
-
-.level-table table th .level {
-  background-color: #1C1C1D !important;
-}
-
-.level-table table td {
-  background-color: #1C1C1D !important;
-}
-
-.fullCheck input[type=checkbox]+label {
-  background-color: #39393D !important;
-}
-
-.fullCheck input[type=checkbox]:checked+label {
-  background-color: #1060E1 !important;
-}
-
-.top-sch-wrap {
-  background-color: #1C1C1D !important;
-}
-
-.contents .question-form .area__left {
-  background-color: #1C1C1D !important;
-}
-
-.question-type .question-type__select {
-  background-color: #39393D !important;
-}
-
-.question-type .question-type__select .tit {
-  color: #ddd !important;
-}
-
-.question-type .question-type__select .checkbox input+label:before {
-  background-color: #1C1C1D !important;
-}
-
-.btn .f-12 {
-  color: #ddd !important;
-}
-
-.upload-box__top {
-  background-color: #1C1C1D !important;
-}
-
-.upload-box__bot,
-.upload-area {
-  border-color: #39393D !important;
-}
-
-.upload-box__bot *,
-.upload-area * {
-  color: #ddd !important;
-}
-
-.upload-info {
-  border-color: #39393D !important;
-}
-
-.upload-info .upload-txt * {
-  color: #ddd !important;
-}
-
-.list-form.list-style-page {
-  background-color: #1C1C1D !important;
-}
-
-.tbl-list.status-table table tr.bg-gray {
-  background-color: #1C1C1D !important;
-}
-
-.answer-toggle-btn span {
-  color: #7D7D82 !important;
-}
-
-.btn-move {
-  background-color: #39393D !important;
-}
-
-.check-title {
-  background-color: #39393D !important;
-}
-
-.participant-content__ul.style02 .participant-content__li .btn.paperList-btn {
-  background-color: #39393D !important;
-}
-
+.fullCheck input[type=checkbox]:checked+label,
 .participant-content__ul.style02 .participant-content__li .btn.paperList-btn.active {
   background-color: #1060E1 !important;
 }
 
-.plan-wrap .plan-wrap__tit h2 {
-  color: #ddd !important;
-}
-
-.plan-wrap .plan-wrap__list ul li .event b {
-  color: #ddd !important;
-}
-
-.classInfo .classInfo-wrap {
-  background-color: #1C1C1D !important;
-}
-
-.classInfo .classInfo-wrap * {
-  color: #ddd !important;
-}
-
-.classLatest li {
-  background-color: #1C1C1D !important;
-}
-
-.classLatest li * {
-  color: #ddd !important;
-}
-
-.classMat li .titleWrap {
-  background-color: #1C1C1D !important;
-}
-
-.classMat li .titleWrap * {
-  color: #ddd !important;
-}
-
-.main-mobile {
-  background-color: #1C1C1D !important;
-}
-
-.main-mobile * {
-  color: #ddd !important;
-}
-
-.participant-content__ul .participant-content__li .addGroup-btn .btn {
-  background-color: #39393D !important;
-}
-
-.group-create .group-create__groupList .groupList .groupList-ul {
-  border-color: #39393D !important;
-}
-
-.content-info .content-info__li .content-info__r .info__r-ul .info__r-li {
-  background-color: #39393D !important;
-}
-
-.list-form .list-form__topWrap .list-form__tit .question {
-  border-color: #39393D !important;
-}
-
-.chatting-wrap {
-  background-color: #1C1C1D !important;
-  color: #ddd !important;
-}
-
-.chatting-wrap .chatting-prev .btn {
-  background-color: #1C1C1D !important;
-  color: #ddd !important;
-}
-
-.chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__alarm p {
-  background-color: #39393D !important;
-  color: #ddd !important;
-}
-
-.chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .chat {
+.chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__alarm p,
+.chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .chat,
+.chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .chat .chat-link__txt *,
+.chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .chat-file .chat-file,
+.chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .chat-file .chat-file__txt *,
+.chatting-wrap .chatting-areaWrap .chatting-input .chat-file,
+.chatting-wrap .chatting-areaWrap .chatting-input .chat-file__txt * {
   background-color: #39393D !important;
   color: #ddd !important;
 }
@@ -1688,53 +845,17 @@ select {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/chat-shape.svg") !important;
 }
 
-.chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .chat .chat-link__txt * {
-  background-color: #39393D !important;
-  color: #ddd !important;
-}
-
-.chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .chat-file .chat-file {
-  background-color: #39393D !important;
-  color: #ddd !important;
-}
-
-.chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .chat-file .chat-file__txt * {
-  background-color: #39393D !important;
-  color: #ddd !important;
-}
-
 .chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con.other .chat::before {
   background-image: url("https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/chat-shape2.svg") !important;
 }
 
-.chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .btn-delete {
+.chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .btn-delete,
+.state-list {
   color: #757575 !important;
-}
-
-.chatting-wrap .chatting-areaWrap .chatting-area .chatting-area__con .person .name {
-  color: #ddd !important;
-}
-
-.chatting-wrap .chatting-areaWrap .chatting-input .chat-file {
-  background-color: #39393D !important;
-  color: #ddd !important;
-}
-
-.chatting-wrap .chatting-areaWrap .chatting-input .chat-file__txt * {
-  background-color: #39393D !important;
-  color: #ddd !important;
 }
 
 .chatting-wrap .chatting-areaWrap .chatting-input .chatting-input__btn .btn.b-red-line {
   color: #fe2929 !important;
-}
-
-.sch-box.sch-04 {
-  border-color: #39393D !important;
-}
-
-.sch-box.sch-04 .sch-04-btn::before {
-  background-color: #39393D !important;
 }
 
 .ico-totalDoc {
@@ -1757,32 +878,13 @@ select {
   background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/ico-trash_w.svg);
 }
 
-.storage-tit {
-  color: #ddd !important;
-}
-
-.storage-tit span {
+.storage-tit span,
+.api-mypage__info li .t-blue {
   color: #1060e1 !important;
-}
-
-.storage-info .info-area {
-  background-color: #39393D !important;
-}
-
-.storage-info .info-area .info-area__li {
-  color: #ddd !important;
 }
 
 .storage-info .info-area .info-area__li span {
   color: #FF3B00 !important;
-}
-
-.state-list {
-  color: #757575 !important;
-}
-
-.state-list.active {
-  color: #1060E1 !important;
 }
 
 .state-list.active .ico-folder_lg {
@@ -1897,98 +999,28 @@ select {
   background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/ico-type_contents_w.svg);
 }
 
-.help-list li .btn b {
-  color: #fff !important;
-}
-
-.help-link .com-box p {
-  color: #fff !important;
-}
-
-.video-box__table.tbl-list table td {
-  background-color: #1C1C1D !important;
-}
-
-.scroll-container .view-class__btn.view-prev__btn.b-black {
-  background-color: #39393D !important;
-  opacity: 1;
-}
-
+.scroll-container .view-class__btn.view-prev__btn.b-black,
 .scroll-container .view-class__btn.view-next__btn.b-black {
   background-color: #39393D !important;
   opacity: 1;
-}
-
-.help-tit {
-  color: #fff;
-}
-
-/* .help-wrap .sch-wrap .btn-sch {
-  background-color: #1060e1 !important;
-  color: #fff;
-} */
-
-.help-link__sub .help-link__list a {
-  color: #fff;
 }
 
 .viewDetail .category-tit {
   background-color: transparent;
 }
 
-.api-wrap .display-con__box {
-  border-color: #39393D !important;
-}
-
-.api-wrap .tit-wrap .tit {
-  color: #ddd !important;
-}
-
 .api-info__top span {
   background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/theme/dark/api-logo_dark.svg);
 }
 
-.api-info__top p {
+.api-info__top p,
+.api-list__manual li p {
   color: #fff;
 }
 
 .api-list__manual li .img img {
   background-color: #fff;
   border-radius: 50%;
-}
-
-.api-list__manual li p {
-  color: #fff;
-}
-
-.api-dev__list li .display-bar .display-con.display-tit {
-  background-color: #39393D !important;
-}
-
-.api-login .inner-wrap.api-login__util li {
-  background-color: #39393D !important;
-}
-
-.api-mypage__info {
-  background-color: #1C1C1D !important;
-  border-color: #39393D !important;
-}
-
-.api-mypage__info li {
-  color: #ddd !important;
-}
-
-.api-mypage__info li .t-blue {
-  color: #1060e1 !important;
-}
-
-.api-main__menu .api-menu__box {
-  border-color: #39393D !important;
-}
-
-.api-main__menu .api-menu__box h3,
-.api-main__menu .api-menu__box p {
-  color: #ddd !important;
 }
 
 .upload-info.upload-class .upload-type {
@@ -2007,18 +1039,6 @@ select {
   }
 }
 
-.main-stu .area__right .main-stu__slide .main-stu__tit {
-  color: #ddd !important;
-}
-
-.main-stu .area__right .main-stu__next .main-list__wrap .list-form__tit .date-list {
-  color: #ddd !important;
-}
-
-.main-stu .area__right .main-list .main-stu__notice .tit-wrap button {
-  color: #ddd !important;
-}
-
 .main-stu .area__right .main-list .main-stu__alarm .alarm-list li a .ico-arrow-black {
   background-image: url(https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/../../images/ico_arr_w.svg);
   width: 13px;
@@ -2026,43 +1046,14 @@ select {
   transform: rotate(-90deg);
 }
 
-.main-stu .area__right .main-list .main-stu__notice .tbl-list table .contents-top .date {
-  color: #8F8F93 !important;
-}
-
-/*# sourceMappingURL=dark.css.map */
-
-/* KHJ APPEND */
 i.pi {
   color: #fafafa;
-}
-
-.p-datatable .p-datatable-tbody>tr {
-  background-color: #1C1C1D !important;
-}
-
-.p-paginator .p-component {
-  background-color: #39393D !important;
-}
-
-.p-datatable .p-paginator-bottom {
-  background-color: #1C1C1D !important;
-}
-
-.p-dropdown {
-  background-color: #39393D !important;
 }
 
 .p-checkbox .p-checkbox-box {
   border: 2px solid #1C1C1D !important;
   background-color: #39393D !important;
 }
-
-
-.p-sidebar {
-  background-color: #1C1C1D !important;
-}
-
 
 span.p-sidebar-close-icon {
   color: #fafafa !important;
@@ -2072,7 +1063,6 @@ button.p-sidebar-close {
   background: #6c757d !important;
 }
 
-
 .p-datatable-scrollable th.p-frozen-column {
   background-color: #1C1C1D;
 }
@@ -2080,25 +1070,6 @@ button.p-sidebar-close {
 .p-datatable-scrollable .p-datatable-tfoot>tr>td {
   background-color: #39393D;
 }
-
-.main-stu .area__right .main-list .main-stu__menu li p {
-  color: #fff !important;
-}
-
-.calendar-wrap .fc .fc-toolbar-title,
-.calendar-wrap .fc .fc-daygrid-day-number,
-.main-stu .area__right .main-stu__next .main-list__wrap .list-form__tit p {
-  color: #fff !important;
-}
-
-.p-dialog>div {
-  background-color: #1C1C1D !important;
-}
-
-.p-dialog>div * {
-  color: #fff !important;
-}
-
 
 .main-stu .area__right .main-stu__slide>ul>.swiper-slide.main-stu__prev,
 .main-stu .area__right .main-stu__slide>ul>.swiper-slide.main-stu__next {
