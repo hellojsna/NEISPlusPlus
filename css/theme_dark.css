@@ -29,13 +29,16 @@ table.p-datatable-table.ng-star-inserted > tbody > tr td div {
   color: #fff !important;
 }
 
-.com-box,
 header.area-wrap .area__left.tchInfo-Wrap .tchInfoBtn .tchInfo,
 header .hd-util .alert-pop,
 header .hd-util .quick-pop,
 header .gnb-wrap .gnb-cont,
-.main-stu .area__right .main-stu__pagination {
+.main-stu .area__right .main-stu__pagination,
+.main-stu .area__right .main-stu__next .main-list__wrap .inner-wrap .inner-right .list-form.list-form__bach .list-form__bottom {
   background-color: #1C1C1D80 !important;
+}
+.com-box::before {
+    background-color: #1C1C1D80 !important;
 }
 
 body, header, footer, footer *,
