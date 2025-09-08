@@ -1,16 +1,16 @@
-function obfuscateID(id, envUUID) {
+function obfuscateId(id, envUUID) {
     // obfuscate the id using envUUID
     if (id.length > envUUID.length) {
-        throw new Error('ID is too long to obfuscate.');
+        throw new Error('Id is too long to obfuscate.');
     }
     const idLength = id.length;
     const step = Math.floor(envUUID.length / id.length);
-    let obfuscatedID = '';
+    let obfuscatedId = '';
     for (let i = 0; i < idLength; i++) {
-        obfuscatedID += envUUID.slice(i * step, (i + 1) * step) + id[i];
+        obfuscatedId += envUUID.slice(i * step, (i + 1) * step) + id[i];
     }
-    obfuscatedID += envUUID.slice(idLength * step);
-    return obfuscatedID;
+    obfuscatedId += envUUID.slice(idLength * step);
+    return obfuscatedId;
 }
 
 const logoElem = document.getElementsByClassName("hd-logo");
@@ -56,37 +56,42 @@ function addThemeInjectObserver() {
     }).observe(document, { attributes: true, childList: true, subtree: true });
 }
 
-function injectCSS(file, envUUID) {
+function injectCSS(file, elementId, envUUID) {
     // This function should NOT be called directly, use checkDarkMode().
     if (!envUUID) {
         throw new Error('envUUID is required to inject CSS.');
     }
-    const linkID = obfuscateID('NPP_CSS_theme_dark', envUUID);
-    if (document.getElementById(linkID)) {
+    const linkId = obfuscateId(`NPP_CSS_${elementId}`, envUUID);
+    if (document.getElementById(linkId)) {
         return; // CSS already injected
     }
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
     link.href = chrome.runtime.getURL(file);
-    link.id = obfuscateID('NPP_CSS_theme_dark', envUUID);
+    link.id = obfuscateId(`NPP_CSS_${elementId}`, envUUID);
     document.head.appendChild(link);
 }
 
 function checkDarkMode() {
     chrome.storage.sync.get(['envUUID', 'darkMode'], function (result) {
         if (result.darkMode) {
-            injectCSS('css/theme_dark.css', result.envUUID);
+            injectCSS('css/theme_dark.css', 'theme_dark', result.envUUID);
         } else {
-            const linkID = obfuscateID('NPP_CSS_theme_dark', result.envUUID);
-            if (document.getElementById(linkID)) {
-                document.getElementById(linkID)?.remove();
+            const linkId = obfuscateId('NPP_CSS_theme_dark', result.envUUID);
+            if (document.getElementById(linkId)) {
+                document.getElementById(linkId)?.remove();
             }
         }
         overrideDarkModeLogo(result.darkMode);
     });
 }
 
+function injectFontCSS() {
+    chrome.storage.sync.get(['envUUID'], function (result) {
+        injectCSS('fonts/pretendard-gov-subset.css', 'font_pretendard_gov', result.envUUID);
+    });
+}
 chrome.storage.onChanged.addListener(function (changes, namespace) {
     if (changes.darkMode) {
         checkDarkMode();
@@ -94,6 +99,7 @@ chrome.storage.onChanged.addListener(function (changes, namespace) {
 });
 
 checkDarkMode();
+injectFontCSS();
 setTimeout(checkDarkMode, 2000); // Retry after 2 seconds to make sure dark mode is applied even if the page loads slowly.
 addLogoUpdateObserver();
 addThemeInjectObserver();

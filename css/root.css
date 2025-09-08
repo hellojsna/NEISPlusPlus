@@ -2,6 +2,12 @@
     --thinBlur: blur(5px) saturate(1.8);
     --normalBlur: blur(10px) saturate(1.8);
     --thickBlur: blur(20px) saturate(1.8);
+    --font-family: 'Pretendard GOV', 'Noto Sans KR', sans-serif;
+}
+
+:not(.pi) { /* primeicons 사용하는 부분 제외한 곳에 Pretendard GOV 적용 */
+    font-family: 'Pretendard GOV', 'Noto Sans KR', sans-serif !important;
+    font-weight: 500;
 }
 
 body {
@@ -20,6 +26,11 @@ header .gnb-wrap.show {
 .main-stu .area__right .main-list .main-stu__info {
     background-color: #6359B180 !important;
     backdrop-filter: var(--thinBlur);
+}
+.main-stu .area__right .main-list .main-stu__info .stu-info__left .user .user-info .name,
+.list-form .list-form__tit .subject {
+    font-size: 1.4rem !important;
+    font-weight: 900 !important;
 }
 
 .main-stu .area__right .main-stu__pagination {
