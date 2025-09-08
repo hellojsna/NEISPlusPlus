@@ -35,6 +35,27 @@ function addLogoUpdateObserver() {
     }).observe(document, { attributes: true, childList: true, subtree: true });
 }
 
+let lastThemeInjectObserveTime = 0;
+let themeInjectAlerted = false;
+function addThemeInjectObserver() {
+    let disabledCSSHref = "assets/scss/lab/theme/stdLabDef.css";
+    new MutationObserver(() => {
+        if (Date.now() - lastThemeInjectObserveTime < 3000) { // document 내용 바뀔 때마다 alert 표시 방지
+            return;
+        }
+        console.log("Checking for conflicting theme CSS...");
+        const themeCSS = document.getElementById("csp-lab-theme-css");
+        if (themeCSS && !themeCSS.href.includes(disabledCSSHref)) {
+            lastThemeInjectObserveTime = Date.now();
+            if (!themeInjectAlerted) {
+                alert("실험실 테마는 NEIS++의 다크 모드와 호환되지 않습니다.");
+            }
+            themeInjectAlerted = !themeInjectAlerted;
+            console.log(themeInjectAlerted);
+        }
+    }).observe(document, { attributes: true, childList: true, subtree: true });
+}
+
 function injectCSS(file, envUUID) {
     // This function should NOT be called directly, use checkDarkMode().
     if (!envUUID) {
@@ -75,3 +96,4 @@ chrome.storage.onChanged.addListener(function (changes, namespace) {
 checkDarkMode();
 setTimeout(checkDarkMode, 2000); // Retry after 2 seconds to make sure dark mode is applied even if the page loads slowly.
 addLogoUpdateObserver();
+addThemeInjectObserver();
