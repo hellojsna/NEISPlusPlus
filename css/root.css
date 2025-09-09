@@ -160,3 +160,8 @@ header.area-wrap .area__left.tchInfo-Wrap .tchInfoBtn .tchInfo * {
     bottom: 0;
     padding-bottom: 0.2rem;
 }
+
+body > app-root > csp-std-edi div.calendar-page > div.tbl-list-cst-wrap > table {
+    border-radius: 10px;
+    overflow: hidden;
+}

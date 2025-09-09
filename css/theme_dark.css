@@ -140,7 +140,8 @@ header .gnb-wrap .gnb-scroll-wrap>li>a,
 .error_con_wrap,
 .fc .fc-timegrid-slot-label-cushion,
 .fc tr > td:not(:is(.fc-day-sat, .fc-day-sun)) > .fc-daygrid-day-frame > div > a,
-.p-datepicker:not(.p-datepicker-inline) * {
+.p-datepicker:not(.p-datepicker-inline) *,
+.view-faq .view-faq__r a {
   color: #ddd !important;
 }
 
@@ -300,7 +301,8 @@ header .gnb-wrap .gnb,
 .p-datepicker:not(.p-datepicker-inline) .p-datepicker-header,
 .p-sidebar,
 .p-dialog>div,
-.list-form .state {
+.list-form .state,
+body > app-root > csp-std-edi div.calendar-page > div.tbl-list-cst-wrap > table > tr > td  {
   background-color: #1C1C1D !important;
 }
 
@@ -392,7 +394,7 @@ header .gnb-wrap .gnb .gnb-ul .gnb-li .gnbLnb-wrap .gnb__lnb li a.current,
 header .gnb-wrap .gnb .gnb-ul .gnb-li.active .link,
 header .hd-quick li a.current,
 .state-list.active {
-  color: #1060E1 !important;
+  color: #007aff !important;
 }
 
 header .area__right *,
@@ -900,7 +902,8 @@ select {
 }
 
 .storage-tit span,
-.api-mypage__info li .t-blue {
+.api-mypage__info li .t-blue,
+body > app-root > csp-std-edi div.calendar-page > div.tbl-list-cst-wrap > table > tr > td a {
   color: #1060e1 !important;
 }
 
@@ -1130,4 +1133,7 @@ button.p-sidebar-close {
 .main-stu .area__right .main-stu__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: #f8f9fa50 !important;
     color: #000 !important;
+}
+.p-toast .p-toast-message .p-toast-message-content {
+  backdrop-filter: brightness(0.7) !important;
 }
