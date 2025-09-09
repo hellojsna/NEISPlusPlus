@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 /* From https://www.neisplus.kr/csp-std/assets/neisplus/scss/theme/dark.css */
-
+*, a {
+  color: #fff;
+}
 ::-webkit-scrollbar-thumb {
   background-color: #39393D !important;
 }
@@ -27,7 +29,8 @@ header .hd-logo span,
 .p-dialog>div *,
 table.p-datatable-table.ng-star-inserted > tbody > tr td div,
 .calendar-page .fc .fc-toolbar-title,
-.p-dropdown-panel .p-dropdown-items .p-dropdown-item > span {
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item > span,
+.school h2 {
   color: #fff !important;
 }
 
@@ -37,7 +40,8 @@ header .hd-util .quick-pop,
 header .gnb-wrap .gnb-cont,
 .main-stu .area__right .main-stu__pagination,
 .main-stu .area__right .main-stu__next .main-list__wrap .inner-wrap .inner-right .list-form.list-form__bach .list-form__bottom,
-.p-dropdown-panel {
+.p-dropdown-panel,
+.p-overlaypanel {
   background-color: #1C1C1D80 !important;
 }
 .com-box::before {
@@ -219,9 +223,8 @@ header .gnb-wrap .gnb-info-cont>li>a>div,
 .p-dropdown,
 .p-inputswitch:not(.p-inputswitch-checked) > .p-inputswitch-slider,
 .p-dropdown-panel .p-dropdown-items .p-dropdown-item:hover,
-.p-datepicker:not(.p-datepicker-inline),
-.p-datepicker:not(.p-datepicker-inline) .p-datepicker-header,
-.p-datepicker table td.p-datepicker-today > span {
+.p-datepicker table td.p-datepicker-today > span,
+.p-datepicker:not(.p-datepicker-inline) td > span:hover {
   background-color: #39393D !important;
 }
 
@@ -229,6 +232,7 @@ table, textarea,
 table th,
 ul.tbl-view>li>div,
 ul.tbl-view>li .view-col div.td,
+ul.tbl-view.tbl-view-mypage>li>div>*,
 header .area__left .tchInfo, header .area__left .tchInfo *,
 header .gnb-wrap .gnb-tit,
 header .gnb-wrap .gnb-info,
@@ -292,6 +296,8 @@ header .gnb-wrap .gnb,
 .api-mypage__info,
 .p-datatable .p-datatable-tbody>tr,
 .p-datatable .p-paginator-bottom,
+.p-datepicker:not(.p-datepicker-inline),
+.p-datepicker:not(.p-datepicker-inline) .p-datepicker-header,
 .p-sidebar,
 .p-dialog>div,
 .list-form .state {
@@ -1069,6 +1075,10 @@ i.pi {
 .p-checkbox .p-checkbox-box {
   border: 2px solid #1C1C1D !important;
   background-color: #39393D !important;
+}
+
+.color-select .btn-color-wrap {
+  backdrop-filter: invert(1) !important;
 }
 
 span.p-sidebar-close-icon {

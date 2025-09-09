@@ -23,7 +23,9 @@ header .gnb-wrap {
 header .gnb-wrap.show {
     opacity: 1 !important;
 }
-
+header .hd-logo span {
+    margin-top: 0 !important;
+}
 .main-stu .area__right .main-list .main-stu__info {
     background-color: #6359B180 !important;
     backdrop-filter: var(--thinBlur);
@@ -48,7 +50,8 @@ header .gnb-wrap.show {
     overflow: visible;
 }
 
-.main-stu .area__right .main-stu__pagination {
+.main-stu .area__right .main-stu__pagination,
+.p-overlaypanel {
     background-color: #ffffff50 !important;
     backdrop-filter: var(--thinBlur);
 }
