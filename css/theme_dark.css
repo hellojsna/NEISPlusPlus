@@ -25,7 +25,8 @@ header .hd-logo span,
 .calendar-wrap .fc .fc-daygrid-day-number,
 .main-stu .area__right .main-stu__next .main-list__wrap .list-form__tit p,
 .p-dialog>div *,
-table.p-datatable-table.ng-star-inserted > tbody > tr td div {
+table.p-datatable-table.ng-star-inserted > tbody > tr td div,
+.calendar-page .fc .fc-toolbar-title {
   color: #fff !important;
 }
 
@@ -130,7 +131,9 @@ header .gnb-wrap .gnb-scroll-wrap>li>a,
 .api-main__menu .api-menu__box h3,
 .api-main__menu .api-menu__box p,
 .list-form .state,
-.error_con_wrap {
+.error_con_wrap,
+.fc .fc-timegrid-slot-label-cushion,
+.fc tr > td:not(:is(.fc-day-sat, .fc-day-sun)) > .fc-daygrid-day-frame > div > a {
   color: #ddd !important;
 }
 
@@ -1009,7 +1012,8 @@ select {
   opacity: 1;
 }
 
-.viewDetail .category-tit {
+.viewDetail .category-tit,
+.calendar-btn.today .btn {
   background-color: transparent;
 }
 
