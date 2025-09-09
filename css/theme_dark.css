@@ -26,7 +26,8 @@ header .hd-logo span,
 .main-stu .area__right .main-stu__next .main-list__wrap .list-form__tit p,
 .p-dialog>div *,
 table.p-datatable-table.ng-star-inserted > tbody > tr td div,
-.calendar-page .fc .fc-toolbar-title {
+.calendar-page .fc .fc-toolbar-title,
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item > span {
   color: #fff !important;
 }
 
@@ -35,11 +36,12 @@ header .hd-util .alert-pop,
 header .hd-util .quick-pop,
 header .gnb-wrap .gnb-cont,
 .main-stu .area__right .main-stu__pagination,
-.main-stu .area__right .main-stu__next .main-list__wrap .inner-wrap .inner-right .list-form.list-form__bach .list-form__bottom {
+.main-stu .area__right .main-stu__next .main-list__wrap .inner-wrap .inner-right .list-form.list-form__bach .list-form__bottom,
+.p-dropdown-panel {
   background-color: #1C1C1D80 !important;
 }
 .com-box::before {
-    background-color: #1C1C1D80 !important;
+  background-color: #1C1C1D80 !important;
 }
 
 body, header, footer, footer *,
@@ -133,7 +135,8 @@ header .gnb-wrap .gnb-scroll-wrap>li>a,
 .list-form .state,
 .error_con_wrap,
 .fc .fc-timegrid-slot-label-cushion,
-.fc tr > td:not(:is(.fc-day-sat, .fc-day-sun)) > .fc-daygrid-day-frame > div > a {
+.fc tr > td:not(:is(.fc-day-sat, .fc-day-sun)) > .fc-daygrid-day-frame > div > a,
+.p-datepicker:not(.p-datepicker-inline) * {
   color: #ddd !important;
 }
 
@@ -213,7 +216,12 @@ header .gnb-wrap .gnb-info-cont>li>a>div,
 .api-dev__list li .display-bar .display-con.display-tit,
 .api-login .inner-wrap.api-login__util li,
 .p-paginator .p-component,
-.p-dropdown {
+.p-dropdown,
+.p-inputswitch:not(.p-inputswitch-checked) > .p-inputswitch-slider,
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item:hover,
+.p-datepicker:not(.p-datepicker-inline),
+.p-datepicker:not(.p-datepicker-inline) .p-datepicker-header,
+.p-datepicker table td.p-datepicker-today > span {
   background-color: #39393D !important;
 }
 
