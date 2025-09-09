@@ -36,7 +36,12 @@ header .gnb-wrap.show {
 .main-stu .area__right .main-stu__next .main-list__wrap .inner-wrap .inner-right .list-form.list-form__bach .list-form__topWrap .list-form__tit {
     height: 100% !important;
 }
-
+.main-stu .area__right .main-stu__next .main-list__wrap .inner-wrap .inner-right .list-form.list-form__bach .list-form__topWrap .list-form__tit .date-list {
+    padding-bottom: 4rem;
+}
+.main-stu .area__right .main-stu__next .main-list__wrap .inner-wrap .inner-right .list-form.list-form__bach .list-form__topWrap .list-form__tit .subject {
+    overflow: visible;
+}
 .main-stu .area__right .main-stu__pagination {
     background-color: #ffffff50 !important;
     backdrop-filter: var(--thinBlur);
@@ -49,8 +54,9 @@ header .gnb-wrap.show {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
 }
 
-.main-stu .area__right .main-stu__pagination .swiper-pagination-bullet > span {
-    font-weight: 800 !important;
+.main-stu .area__right .main-stu__pagination .swiper-pagination-bullet > span,
+.t-blue {
+    font-weight: 700 !important;
 }
 .main-stu .area__right .main-stu__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: #1C1C1D80 !important;
@@ -62,7 +68,9 @@ li.swiper-slide.main-stu__next.swiper-slide-active div.school-info>div.list-form
     background: linear-gradient(to bottom, #1060E150, #568EE8 80%) !important;
     backdrop-filter: var(--normalBlur);
 }
-
+.main-stu .area__right .main-list .main-stu__notice .tbl-list table {
+    background-color: transparent !important;
+}
 header.area-wrap .area__left.tchInfo-Wrap .tchInfoBtn .tchInfo,
 header .hd-util .alert-pop,
 header .hd-util .quick-pop,
@@ -86,6 +94,10 @@ header .gnb-wrap .gnb-cont,
     backdrop-filter: var(--thinBlur);
     border-radius: 10px;
     z-index: -1;
+}
+
+.main-stu .area__right .main-list .main-stu__use .stu-use__list .swiper-slide .com-box i {
+    background-size: contain;
 }
 
 header.area-wrap .area__left.tchInfo-Wrap .tchInfoBtn .tchInfo * {
