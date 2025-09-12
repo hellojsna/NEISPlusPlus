@@ -19,6 +19,9 @@
             ],
             "matches": [
                 "https://*.neisplus.kr/*"
+            ],
+            "include_globs": [
+                "*.neisplus.kr/csp-*/#/*"
             ]
         }
     ],
