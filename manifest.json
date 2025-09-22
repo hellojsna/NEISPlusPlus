@@ -12,6 +12,14 @@
     "content_scripts": [
         {
             "js": [
+                "scripts/intropage.js"
+            ],
+            "matches": [
+                "https://neisplus.kr/"
+            ]
+        },
+        {
+            "js": [
                 "scripts/root.js"
             ],
             "css": [

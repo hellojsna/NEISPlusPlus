@@ -1,0 +1,101 @@
+html,
+body,
+.scroll-section,
+.scroll-section-mobile {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+header {
+    background: #000;
+    border-bottom: 1px solid #1c1c1e;
+}
+
+header a.logo,
+span.fw-black,
+.sec1-5_tit p.samll {
+    color: #fff;
+}
+
+.qrl-qst-box,
+.sec1-5_list li {
+    background: #1c1c1e !important;
+    border: 1px solid #3a3a3c !important;
+}
+
+.top_btn {
+    filter: invert(1);
+    border: 1px solid #c1c1c1;
+}
+
+img,
+svg {
+    filter: brightness(0.6) saturate(0.8);
+}
+
+a img {
+    filter: none !important;
+}
+
+.txt_top h5::before {
+    opacity: 0.2;
+}
+
+.txt_top h5 {
+    filter: brightness(1.2) saturate(0.8);
+}
+
+.txt_bot,
+.sec1-4_list_txt p,
+.section1-3 .sec1-3_list li .list_txt p {
+    filter: brightness(1.4);
+}
+
+.section1-3 {
+    background: none !important;
+    position: relative;
+}
+
+.section1-5, .section1-5 > * {
+    position: relative;
+}
+.section1-5 > * {
+    z-index: 1;
+}
+.section1-3::before,
+.sec1-3_list li::after,
+.section1-5::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.sec1-3_list li::after,
+.section1-5::after {
+    background: rgba(0, 0, 0, 0.6);
+}
+.sec1-3_list li::after {
+    z-index: -1;
+    border-radius: 15px;
+}
+.section1-3::before {
+    background-size: cover;
+    background-position: center;
+    background: url(https://cdn.neisplus.kr/csp-home/csp-images/image/sec1-3_bg.jpg) no-repeat;
+    filter: brightness(0.5);
+}
+.sec1-3_list li {
+    background-color: #000;
+}
+
+.sec1-5_list li h5, .sec1-5_list li  p {
+    color: #e0e0e0;
+}
+
+.sec1-3_list li .list_txt a, .sec1-5_list_contents a {
+    color: #0091ff;
+}
