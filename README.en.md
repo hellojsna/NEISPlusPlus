@@ -4,6 +4,20 @@
 
 ![NEIS++ Banner Image](README-images/NPP_MainBanner.jpg)
 
+## Disclaimer
+
+This project was created for the purpose of learning Chrome extension development, not for hacking NEIS+ or interfering its operation.
+
+To the extent you choose to access and use this Extension Software, you do so at your own initiative and are responsible for compliance with any applicable laws.
+
+You should not use this Extension Software with important data.
+
+The developer shall not be responsible for any costs, expenses or other liabilities you may incur as a result of using this Extension Software, including but not limited to any damage, loss, or corruption of any software, information or data.
+
+THIS EXTENSION SOFTWARE IS PROVIDED “AS IS” AND “AS AVAILABLE”, WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, AND THE DEVELOPER HEREBY DISCLAIM ALL WARRANTIES AND CONDITIONS WITH RESPECT TO THE EXTENSION SOFTWARE, EITHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES AND/OR CONDITIONS OF MERCHANTABILITY, OF SATISFACTORY QUALITY, OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY, OF QUIET ENJOYMENT, AND OF NONINFRINGEMENT OF THIRD-PARTY RIGHTS.
+
+---
+
 ## Motivation
 
 Starting with the public beta test in 2023, the service for the 4th generation (self-proclaimed) intelligent NEIS has begun.
