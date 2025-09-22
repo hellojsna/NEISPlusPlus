@@ -2,6 +2,8 @@
 
 [한국어 버전 이용 가능](./README.md)
 
+![NEIS++ Banner Image](README-images/NPP_MainBanner.jpg)
+
 ## Motivation
 
 Starting with the public beta test in 2023, the service for the 4th generation (self-proclaimed) intelligent NEIS has begun.
@@ -29,7 +31,7 @@ The goals are:
 
 ## Analysis of NEIS+
 
-![Console Logs](README-images/ConsoleHello.jpg)
+![Image of developer tool's console. NeisPlus Version: 230625v1815 0.0.9 / 환영합니다. 나이스플러스입니다. / runType1: operServer / runType2: true / runType3: std / runType4: desktop](README-images/ConsoleHello.jpg)
 
 Upon accessing the NEIS+ service, it prints a summary of the client environment to the console, then initiates an infinite loop of `console.clear()` with codes to avoid debugging.
 ```
@@ -76,6 +78,15 @@ I aim to apply the [latest version of KRDS](https://www.krds.go.kr/html/site/ind
 > At first, I applied the [Pretendard GOV](https://www.krds.go.kr/html/site/style/style_03.html) font specified in the guidelines.
 
 Separate from KRDS, I've applied some blur effects to my personal preference. (Can be removed later)
+
+## Results (Screen Shot)
+
+![Image comparing the first tab of main page.](README-images/Main_1.gif)
+
+![Image comparing the second tab of main page.](README-images/Main_2.gif)
+
+![Image comparing the calendar page.](README-images/Calendar.gif)
+
 ---
 
 1. ['4세대 나이스 대란 총체적 부실' 교육부 책임론](https://www.ihopenews.com/news/articleView.html?idxno=238259) - 호남교육신문 2024. 08. 27.

@@ -2,6 +2,8 @@
 
 [English Version Available](./README.en.md)
 
+![NEIS++ 배너 이미지](README-images/NPP_MainBanner.jpg)
+
 ## 프로젝트 제작 동기
 
 2023년 공개 베타 테스트를 시작으로 4세대 (자칭)지능형 NEIS의 서비스가 시작되었습니다.
@@ -27,7 +29,7 @@ NEIS+ 서비스는 대한민국의 공공 서비스들이 늘 그랬듯 개통 �
 
 ## NEIS+ 분석
 
-![Console Logs](README-images/ConsoleHello.jpg)
+![개발자 도구 콘솔 이미지. NeisPlus Version: 230625v1815 0.0.9 / 환영합니다. 나이스플러스입니다. / runType1: operServer / runType2: true / runType3: std / runType4: desktop](README-images/ConsoleHello.jpg)
 
 NEIS+ 서비스에 접속하면 콘솔에 간단한 접속 환경이 출력된 후 디버깅을 방지하기 위한 코드와 `console.clear()`의 무한 호출이 시작됩니다.
 ```
@@ -74,6 +76,14 @@ NEIS+는 [디지털 정부서비스 UI/UX 가이드라인](https://v04.krds.go.k
 > 우선 첫번째로 가이드라인에 명시된 [Pretendard GOV](https://www.krds.go.kr/html/site/style/style_03.html) 서체를 적용했습니다.
 
 KRDS와 별도로 우선 제 취향에 맞춘 블러 효과를 적용했습니다.(추후 제거 가능)
+
+## 결과(스크린샷)
+
+![메인 페이지의 첫번째 탭을 비교하는 이미지.](README-images/Main_1.gif)
+
+![메인 페이지의 두번째 탭을 비교하는 이미지.](README-images/Main_2.gif)
+
+![캘린더 페이지를 비교하는 이미지.](README-images/Calendar.gif)
 
 ---
 
