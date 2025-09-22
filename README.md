@@ -85,6 +85,14 @@ KRDS와 별도로 우선 제 취향에 맞춘 블러 효과를 적용했습니�
 
 ![캘린더 페이지를 비교하는 이미지.](README-images/Calendar.gif)
 
+## 설치
+
+1. [Repository를 zip으로 다운로드](https://github.com/hellojsna/NEISPlusPlus/archive/refs/heads/main.zip)한 다음, 압축을 해제합니다.
+2. [chrome://extension](chrome://extension) 페이지를 엽니다.
+3. 개발자 모드를 활성화하고, **압축 해제된 확장 프로그램 로드** 옵션을 선택합니다.
+4. 압축 해제한 디렉터리를 선택합니다.
+5. [NEIS+](https://neisplus.kr) 페이지를 엽니다.
+
 ---
 
 1. ['4세대 나이스 대란 총체적 부실' 교육부 책임론](https://www.ihopenews.com/news/articleView.html?idxno=238259) - 호남교육신문 2024. 08. 27.

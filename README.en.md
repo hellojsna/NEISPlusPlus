@@ -87,6 +87,14 @@ Separate from KRDS, I've applied some blur effects to my personal preference. (C
 
 ![Image comparing the calendar page.](README-images/Calendar.gif)
 
+## Installation
+
+1. [Download Repository as zip](https://github.com/hellojsna/NEISPlusPlus/archive/refs/heads/main.zip) and unzip the downloaded file.
+2. Open [chrome://extension](chrome://extension) page.
+3. Enable developer mode, then select the **Load unpacked**.
+4. Select the unzipped directory.
+5. Open [NEIS+](https://neisplus.kr).
+
 ---
 
 1. ['4세대 나이스 대란 총체적 부실' 교육부 책임론](https://www.ihopenews.com/news/articleView.html?idxno=238259) - 호남교육신문 2024. 08. 27.
