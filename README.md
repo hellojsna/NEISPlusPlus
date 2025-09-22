@@ -1,4 +1,4 @@
-# NEIS++ - 학생용 NEIS+ 서비스 사용자 경험 개선
+# NEIS++ | 학생용 NEIS+ 서비스 사용자 경험 개선
 
 [English Version Available](./README.en.md)
 

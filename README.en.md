@@ -1,4 +1,4 @@
-# NEIS++ - enhance NEIS+(Korean National Education Information System) Student Service UX.
+# NEIS++ | Enhance NEIS+(Korean National Education Information System) Student Service UX.
 
 [한국어 버전 이용 가능](./README.md)
 
