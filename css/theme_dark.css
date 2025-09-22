@@ -393,7 +393,8 @@ ul.tbl-view>li .view-col div.td .setting-toggle .toggleSwitch .toggleButton,
 header .gnb-wrap .gnb .gnb-ul .gnb-li .gnbLnb-wrap .gnb__lnb li a.current,
 header .gnb-wrap .gnb .gnb-ul .gnb-li.active .link,
 header .hd-quick li a.current,
-.state-list.active {
+.state-list.active,
+.main-stu .area__right .main-stu__next .main-list__wrap .inner-wrap .inner-right .list-form.list-form__bach .list-form__bottom {
   color: #007aff !important;
 }
 
