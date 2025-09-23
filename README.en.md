@@ -102,7 +102,7 @@ Separate from KRDS, I've applied some blur effects to my personal preference. (C
 ## Installation
 
 1. [Download Release](https://github.com/hellojsna/NEISPlusPlus/releases) and extract the downloaded file.
-2. Open [chrome://extension](chrome://extension) page.
+2. Open [chrome://extensions](chrome://extensions) page.
 3. Enable developer mode, then select the **Load unpacked**.
 4. Select the extracted directory.
 
