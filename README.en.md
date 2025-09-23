@@ -16,8 +16,6 @@ The developer shall not be responsible for any costs, expenses or other liabilit
 
 THIS EXTENSION SOFTWARE IS PROVIDED “AS IS” AND “AS AVAILABLE”, WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, AND THE DEVELOPER HEREBY DISCLAIM ALL WARRANTIES AND CONDITIONS WITH RESPECT TO THE EXTENSION SOFTWARE, EITHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES AND/OR CONDITIONS OF MERCHANTABILITY, OF SATISFACTORY QUALITY, OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY, OF QUIET ENJOYMENT, AND OF NONINFRINGEMENT OF THIRD-PARTY RIGHTS.
 
----
-
 ## Motivation
 
 Starting with the public beta test in 2023, the service for the 4th generation (self-proclaimed) intelligent NEIS has begun.
@@ -103,11 +101,16 @@ Separate from KRDS, I've applied some blur effects to my personal preference. (C
 
 ## Installation
 
-1. [Download Repository as zip](https://github.com/hellojsna/NEISPlusPlus/archive/refs/heads/main.zip) and unzip the downloaded file.
+1. [Download Release](https://github.com/hellojsna/NEISPlusPlus/releases) and extract the downloaded file.
 2. Open [chrome://extension](chrome://extension) page.
 3. Enable developer mode, then select the **Load unpacked**.
-4. Select the unzipped directory.
-5. Open [NEIS+](https://neisplus.kr).
+4. Select the extracted directory.
+
+## Usage
+
+Enable the extension and Open [NEIS+](https://neisplus.kr).
+
+You can toggle dark mode in the extension options page.
 
 ---
 
