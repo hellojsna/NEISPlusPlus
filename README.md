@@ -2,6 +2,8 @@
 
 [English Version Available](./README.en.md)
 
+[Demo Video](https://youtu.be/lZ8Lrt-yoJY)
+
 ![NEIS++ 배너 이미지](README-images/NPP_MainBanner.jpg)
 
 ## Disclaimer
